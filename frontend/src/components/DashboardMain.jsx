@@ -33,7 +33,7 @@ const DashboardMain = () => {
 
   return (
     <div className='w-full p-4'>
-      <div className='flex justify-end mb-4'>
+      <div className='flex justify-start mb-4'>
         <button
           className='bg-[#ff5b2e] text-white px-5 py-2 rounded-md font-bold'
           onClick={handleNewApplicationClick}

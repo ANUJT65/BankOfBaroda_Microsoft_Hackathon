@@ -7,7 +7,7 @@ const ApplicationCard = ({ application }) => {
         <h3 className='text-xl font-bold mb-2'>Application ID: {application.id}</h3>
         <p>Documents Shared:</p>
         <ul className='list-disc pl-5'>
-          {application.documents.map((doc, index) => (
+          {application.documents.map  ((doc, index) => (
             <li key={index}>{doc}</li>
           ))}
         </ul>

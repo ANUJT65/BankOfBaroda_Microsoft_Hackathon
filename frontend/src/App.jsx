@@ -7,6 +7,8 @@ import  Home  from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Login2 from './pages/Login2';
+import Application from './pages/Application';
+import BankDashboard from './pages/BankDashboard';
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/login2" element={<Login2 />} />
+        <Route path="/application" element={<Application />} />
+        <Route path="/bankdashboard" element={<BankDashboard />} />
       </Routes>
     </BrowserRouter>
     

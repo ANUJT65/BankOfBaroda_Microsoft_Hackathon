@@ -7,17 +7,19 @@ import Avatar from '@mui/material/Avatar';
 const Navbar = () => {
   return (
     <>
-    <div className='bg-[#ff5b2e] shadow-md flex justify-between mt-3 mr-4 ml-4 rounded-full'>
+    <div className='bg-[#ff5b2e] shadow-md flex justify-between py-2'>
       <div className='flex justify-start'>
         <img src='./logo copy.png' className='h-14 pl-10'></img>
-        <div className='text-2xl font-bold text-white pt-3 pl-5'>Walter White</div>
+        <div className='text-3xl font-bold italic text-white text-italic pt-2 pl-2'>Walter White</div>
       </div>
-      <div className='flex justify-around'>
-      <div className='text-xl font-bold text-white pt-3 mr-4'>Contact</div>
-      <div className='text-xl font-bold text-white pt-3 mr-4'>Features</div>
-      <div className='text-xl font-bold text-white pt-3 mr-36'>About</div>
+      <div className='flex'>
+        <Avatar sx={{ bgcolor: '#000000' }} className='mt-2 mr-5 bg-black'>AT</Avatar>
+        <div className='flex flex-col pr-4'>
+          <div className='font-bold'>Anuj Tadkase</div>
+          <div className='text-white'>BOB Gold Member</div>
+        </div>
       </div>
-        <Avatar className='mt-2 mr-5'>PG</Avatar>
+        
     </div>
     </>
   )
