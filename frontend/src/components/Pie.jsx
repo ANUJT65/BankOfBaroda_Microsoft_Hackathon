@@ -4,10 +4,12 @@ import { useDrawingArea } from '@mui/x-charts/hooks';
 import { styled } from '@mui/material/styles';
 
 const Pie = () => {
+    const colors = ['#FF7B9C', '#607196', '#582B11'];
+
     const data = [
-        { value: 5, label: 'A' },
-        { value: 10, label: 'B' },
-        { value: 15, label: 'C' },
+        { value: 5, label: 'New' },
+        { value: 10, label: 'Pending' },
+        { value: 15, label: 'Reapplied' },
       ];
       
       const size = {
@@ -31,7 +33,7 @@ const Pie = () => {
         );
       }
   return (
-    <PieChart series={[{ data, innerRadius: 80 }]} {...size}>
+    <PieChart colors={colors} series={[{ data, innerRadius: 80, colors }]} {...size}>
       <PieCenterLabel>1096 Applications</PieCenterLabel>
     </PieChart>
   )

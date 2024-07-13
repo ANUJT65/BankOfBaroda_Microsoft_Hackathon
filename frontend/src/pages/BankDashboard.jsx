@@ -6,7 +6,7 @@ import ApplicationsTable from '../components/ApplicationsTable';
 const BankDashboard = () => {
   return (
     <div className='flex flex-col w-full'>
-      <BankerNavbar />
+      <BankerNavbar active='Applications'/>
       <div className='italic text-3xl m-5 ml-7'>Customer Applications</div>
       <hr className='border-t border-black mx-4' />
       <div className='flex mt-5'>

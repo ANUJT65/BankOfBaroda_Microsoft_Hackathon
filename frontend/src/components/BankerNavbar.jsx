@@ -4,7 +4,7 @@ import Avatar from '@mui/material/Avatar';
 
 
 
-const Navbar = () => {
+const Navbar = ({active}) => {
   return (
     <>
     <div className='bg-[#ff5b2e] shadow-md flex justify-between py-2'>
@@ -14,10 +14,9 @@ const Navbar = () => {
       </div>
 
       <div className='flex justify-center'>
-        <div className='px-3 mx-4 pt-3 pb-1 text-white bg-black font-bold'>Applications</div>
-        <div className='p-3 mx-4 font-bold'>Mail</div>
-        <div className='p-3 mx-4 font-bold'>DataChat</div>
-
+        {active === 'Applications' ? <button className='px-3 mx-4 pt-3 pb-1 text-white bg-black font-bold'>Applications</button> : <button className='p-3 mx-4 font-bold'>Applications</button>}
+        {active === 'Mail' ? <button className='px-3 mx-4 pt-3 pb-1 text-white bg-black font-bold'>Mail</button> : <button className='p-3 mx-4 font-bold'>Mail</button>}
+        {active === 'DataChat' ? <button className='px-3 mx-4  pb-1 text-white bg-black font-bold'>DataChat</button> : <button className='p-3 mx-4 font-bold'>DataChat</button>}
       </div>
 
       <div className='flex'>
