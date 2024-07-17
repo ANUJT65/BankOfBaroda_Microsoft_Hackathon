@@ -1,0 +1,500 @@
+sender,content,subject,orig_content,orig_sub,detected class
+taylor.red@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+alex.green@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+isabella.yellow@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+jamie.blue@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+kai.white@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+luca.green@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+mira.yellow@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+nina.blue@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+olivia.white@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+peter.green@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+quinn.yellow@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+rachel.blue@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+sophia.white@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+taylor.green@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+alex.yellow@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+isabella.green@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+jack.brown@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+jasmine.red@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+kian.green@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lila.yellow@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+mason.blue@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+nora.green@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+olivia.yellow@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+peter.blue@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+quinn.green@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+rachel.yellow@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+samantha.blue@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+taylor.green@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+vivian.yellow@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+william.blue@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+xavier.green@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+yasmine.yellow@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+zachary.blue@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+aaliyah.green@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+brayden.yellow@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+caleb.green@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+dakota.blue@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+emily.yellow@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+finn.green@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+grace.yellow@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+hannah.blue@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+ian.green@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+julia.yellow@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+kenneth.blue@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+lucy.green@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.red@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+nathan.brown@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+olivia.pink@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+juan.orange@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+sophia.purple@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+morgan.gray@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+lukas.black@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+isabella.white@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+william.khmer@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+vivian.hmong@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+vincent.tagalog@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+valentina.russian@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+wilma.swahili@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+walter.czech@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+victoria.welsh@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+veronica.cantonese@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+victoria.korean@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+victoria.turkish@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+victoria.hebrew@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+victoria.hindi@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+victoria.arabic@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+victoria.portuguese@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+victoria.persian@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+victoria.french@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+victoria.italian@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+victoria.german@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+victoria.spanish@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+victoria.japanese@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+victoria.polish@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+wilma.swahili@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+walter.czech@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+victoria.welsh@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+veronica.cantonese@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+veronica.korean@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+veronica.turkish@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+veronica.hebrew@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+veronica.hindi@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+veronica.arabic@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+veronica.portuguese@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+veronica.persian@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+veronica.french@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+veronica.italian@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+veronica.german@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+veronica.spanish@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+veronica.japanese@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+veronica.polish@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+walter.russian@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+walter.finnish@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+walter.norwegian@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+walter.danish@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+walter.swedish@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+walter.hungarian@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+walter.greek@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+walter.romanian@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+walter.czech@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+walter.slovak@example.com,ATM withdrawal error. Please assist.,ATM Withdrawal Error,I encountered an error while trying to withdraw cash from the ATM.,ATM Withdrawal Issue,Deposits and Withdrawals
+victoria.welsh@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+victoria.welsh@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+alexander.indian@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+alexander.indian@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+alexander.indian@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+alexander.indian@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+alexander.indian@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+alexander.indian@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+alexander.indian@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+alexander.indian@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+alexander.indian@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+alexander.indian@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+amelia.korean@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+amelia.korean@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+amelia.korean@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+amelia.korean@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+amelia.korean@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+amelia.korean@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+amelia.korean@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+amelia.korean@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+amelia.korean@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+amelia.korean@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+amelia.korean@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+brian.african@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+brian.african@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+brian.african@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+brian.african@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+brian.african@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+brian.african@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+brian.african@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+brian.african@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+brian.african@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+brian.african@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+brian.african@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+brian.african@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+brian.african@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+brian.african@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+brian.african@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+brian.african@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+catherine.european@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+catherine.european@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+catherine.european@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+catherine.european@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+catherine.european@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+catherine.european@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+catherine.european@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+catherine.european@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+catherine.european@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+catherine.european@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+catherine.european@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+catherine.european@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+catherine.european@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+catherine.european@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+david.asian@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+david.asian@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+david.asian@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+david.asian@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+emily.african@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+emily.african@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emily.african@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emily.african@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+emily.african@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+emily.african@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emily.african@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emily.african@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+emily.african@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+emily.african@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emily.african@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emily.african@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+john.latino@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+john.latino@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+john.latino@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+john.latino@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+john.latino@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+john.latino@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+john.latino@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+john.latino@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+john.latino@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+john.latino@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+john.latino@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+john.latino@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+john.latino@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+john.latino@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+john.latino@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+john.latino@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+john.latino@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+john.latino@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+john.latino@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+john.latino@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+john.latino@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+john.latino@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+john.latino@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+john.latino@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+john.latino@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+john.latino@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+john.latino@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+john.latino@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+john.latino@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+john.latino@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+john.latino@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+john.latino@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+john.latino@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+john.latino@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+john.latino@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+john.latino@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sarah.miller@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+james.lee@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+isabella.garcia@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ali.ahmed@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+mia.andersson@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+karen.nguyen@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+lucas.santos@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+emily.wang@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+olivia.patel@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+ethan.kim@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zoe.mendez@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+liam.sanchez@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+mia.wang@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+jessica.lee@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mason.garcia@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+sophia.kim@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+jack.miller@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lucas.patel@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+emily.santos@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+isabella.wang@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+ali.mendez@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+mia.sanchez@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+ethan.lee@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zoe.garcia@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+lucas.kim@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sophia.miller@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+jack.patel@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+isabella.santos@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+ali.mendez@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+mia.sanchez@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+ethan.lee@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zoe.garcia@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+lucas.kim@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sophia.miller@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+jack.patel@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+isabella.santos@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+ali.mendez@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+mia.sanchez@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+ethan.lee@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zoe.garcia@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+lucas.kim@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sophia.miller@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+jack.patel@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+isabella.santos@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.nguyen@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.wu@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+lila.mohamed@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+james.garcia@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sophia.lee@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+olivia.khan@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+mia.chen@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+ethan.nguyen@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+zara.wu@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.mendez@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+james.lee@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+lila.garcia@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+emma.chen@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.nguyen@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+lila.mohamed@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+james.khan@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sophia.wu@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+olivia.mendez@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+ethan.lee@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+zara.garcia@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sophia.nguyen@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+james.chen@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+lila.wu@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.mohamed@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+noah.khan@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+olivia.lee@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zara.chen@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+sophia.mohamed@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+james.lee@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.wu@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.mendez@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+mia.garcia@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+james.wu@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+sophia.khan@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+olivia.mohamed@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ethan.lee@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+zara.chen@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+sophia.nguyen@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+james.chen@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lila.wu@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+emma.mohamed@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+noah.khan@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+olivia.lee@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+zara.chen@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.nguyen@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+james.wu@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+lila.mohamed@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+emma.khan@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.lee@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zara.wu@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+sophia.mohamed@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+james.lee@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.wu@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.khan@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+noah.lee@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+zara.wu@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.mohamed@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+james.lee@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+lila.wu@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+emma.khan@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.lee@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zara.wu@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+mira.patel@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+kai.lee@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.garcia@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+james.park@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lila.kim@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.nguyen@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.wu@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zara.miller@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sophia.jones@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+james.brown@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.davis@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.white@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+noah.black@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+zara.green@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.yellow@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+james.red@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lila.blue@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.purple@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.orange@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zara.pink@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sophia.gray@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+james.brown2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.kim2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.nguyen2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+noah.wu2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+zara.miller2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.jones2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+james.park2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lila.davis2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.white2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.black2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+ali.red@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.yellow@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+james.green@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lila.blue@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.purple@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.orange@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zara.pink@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sophia.gray@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+james.brown3@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.kim3@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.nguyen3@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+noah.wu3@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+zara.miller3@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.jones3@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+james.park3@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lila.davis3@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.white3@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.black3@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+ali.yellow@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.red@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+james.blue@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lila.purple@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.orange@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.green@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zara.blue@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+sophia.red@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+james.green2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.purple2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.orange2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+noah.blue2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+zara.red2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.yellow2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+ali.green2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+james.purple2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+sophia.orange2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.blue2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.yellow2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+noah.purple2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+zara.orange2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.blue2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+ali.yellow2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+james.purple2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+sophia.orange2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.blue2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.yellow2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+noah.purple2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+zara.orange2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.blue2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+ali.yellow2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+james.purple2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+sophia.orange2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.blue2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+jasmine.green2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.red2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+ali.pink2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+james.orange2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.yellow2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+zara.blue2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+lila.purple2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+noah.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+ali.red2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+emma.pink2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+zara.orange2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lila.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+noah.blue2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+ali.yellow2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.purple2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+zara.orange2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+lila.green2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.blue2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+ali.yellow2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+emma.purple2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zara.orange2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.green2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+noah.blue2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ali.yellow2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.purple2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+zara.orange2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+lila.green2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+noah.blue2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+ali.yellow2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+emma.purple2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+juan.red2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+sophia.pink2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+ali.green2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+zara.blue2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+noah.yellow2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+ali.purple2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.orange2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+zara.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+lila.red2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.yellow2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+ali.purple2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+emma.orange2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zara.green2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+lila.red2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+noah.yellow2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ali.purple2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+emma.orange2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+zara.green2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+lila.red2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+noah.yellow2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+ali.purple2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+emma.orange2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+zara.green2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lila.red2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+noah.yellow2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+ali.purple2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+emma.orange2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+zara.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+lila.red2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+noah.yellow2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+mia.blue2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+jordan.pink2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+sophia.brown2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ethan.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+sophia.brown2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.blue2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+jordan.pink2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ethan.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+sophia.brown2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.blue2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+jordan.pink2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ethan.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+sophia.brown2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.blue2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+jordan.pink2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ethan.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+sophia.brown2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.blue2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+jordan.pink2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ethan.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+sophia.brown2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.blue2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+jordan.pink2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ethan.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+sophia.brown2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.blue2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+jordan.pink2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+ethan.green2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+sophia.brown2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+mia.blue2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+olivia.red2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+james.yellow2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+isabella.orange2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lucas.purple2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+olivia.red2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+james.yellow2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+isabella.orange2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lucas.purple2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+olivia.red2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+james.yellow2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
+isabella.orange2@example.com,Fraud alert on my account. Please investigate.,Fraud Alert,I received a notification about suspicious activity on my account. Could you look into it?,Account Security,Fraud and Security
+lucas.purple2@example.com,Customer service inquiry. Please assist.,Customer Service Inquiry,I have a question about my account services.,Customer Service Request,Customer Service
+zara.pink2@example.com,Loan application update.,Loan Application Update,I have an update on my loan application.,Loan Application Status,Loans and Mortgages
+amin.black2@example.com,Account balance inquiry.,Account Balance Inquiry,I want to check my account balance.,Account Balance,Deposits and Withdrawals
