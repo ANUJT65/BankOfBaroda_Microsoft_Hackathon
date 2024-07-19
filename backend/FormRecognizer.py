@@ -23,35 +23,20 @@ def get_data():
         poller = form_recognizer_client.begin_recognize_content_from_url(link)
         form_result = poller.result()
         
-        recognized_data = []
+        key_value_pairs = {}
         for page in form_result:
-            page_data = {
-                "page_number": page.page_number,
-                "tables": [],
-                "lines": []
-            }
             for table in page.tables:
-                table_data = {
-                    "cells": []
-                }
+                cells = {}
                 for cell in table.cells:
-                    cell_data = {
-                        "text": cell.text,
-                        "row_index": cell.row_index,
-                        "column_index": cell.column_index
-                    }
-                    table_data["cells"].append(cell_data)
-                page_data["tables"].append(table_data)
-            
-            for line in page.lines:
-                line_data = {
-                    "text": line.text
-                }
-                page_data["lines"].append(line_data)
-            
-            recognized_data.append(page_data)
+                    if cell.row_index not in cells:
+                        cells[cell.row_index] = {}
+                    cells[cell.row_index][cell.column_index] = cell.text
+                
+                for row in cells.values():
+                    if 0 in row and 1 in row:  # Assuming the first column is 'field' and the second column is 'value'
+                        key_value_pairs[row[0]] = row[1]
         
-        return jsonify(recognized_data)
+        return jsonify(key_value_pairs)
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
