@@ -36,6 +36,13 @@ def get_data():
                     if 0 in row and 1 in row:  # Assuming the first column is 'field' and the second column is 'value'
                         key_value_pairs[row[0]] = row[1]
         
+        '''
+        if "Capital Expenditure:" in key_value_pairs:
+            return jsonify({"message": "All ok", "data": key_value_pairs})
+        else:
+            return jsonify({"message": "Field 'Capital Expenditure' not found", "data": key_value_pairs})
+        '''
+
         return jsonify(key_value_pairs)
 
     except Exception as e:
