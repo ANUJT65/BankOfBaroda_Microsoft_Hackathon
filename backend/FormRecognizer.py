@@ -1,4 +1,5 @@
 import json
+import re
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.formrecognizer import FormRecognizerClient
 from flask import Flask, jsonify, request
@@ -12,6 +13,11 @@ ENDPOINT = credentials['ENDPOINT']
 form_recognizer_client = FormRecognizerClient(ENDPOINT, AzureKeyCredential(API_KEY))
 
 app = Flask(__name__)
+
+def clean_value(value):
+    """ Remove non-numeric characters and convert to integer """
+    numeric_value = re.sub(r'[^\d]', '', value)  # Remove non-digit characters
+    return int(numeric_value) if numeric_value else None
 
 @app.route('/form_ocr', methods=['GET'])
 def get_data():
@@ -34,16 +40,12 @@ def get_data():
                 
                 for row in cells.values():
                     if 0 in row and 1 in row:  # Assuming the first column is 'field' and the second column is 'value'
-                        key_value_pairs[row[0]] = row[1]
+                        key = row[0].strip()
+                        value = clean_value(row[1].strip())
+                        key_value_pairs[key] = value
         
-        '''
-        if "Capital Expenditure:" in key_value_pairs:
-            return jsonify({"message": "All ok", "data": key_value_pairs})
-        else:
-            return jsonify({"message": "Field 'Capital Expenditure' not found", "data": key_value_pairs})
-        '''
-
-        return jsonify(key_value_pairs)
+        # Check if a specific field is present
+            return jsonify(key_value_pairs)
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
