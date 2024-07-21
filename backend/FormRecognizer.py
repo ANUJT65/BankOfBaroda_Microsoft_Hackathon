@@ -1,5 +1,4 @@
 import json
-import re
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.formrecognizer import FormRecognizerClient
 from flask import Flask, jsonify, request
@@ -14,10 +13,23 @@ form_recognizer_client = FormRecognizerClient(ENDPOINT, AzureKeyCredential(API_K
 
 app = Flask(__name__)
 
-def clean_value(value):
-    """ Remove non-numeric characters and convert to integer """
-    numeric_value = re.sub(r'[^\d]', '', value)  # Remove non-digit characters
-    return int(numeric_value) if numeric_value else None
+def parse_line(line):
+    """ Parses a line of text into a key-value pair. """
+    if ':' in line:
+        key, value = line.split(':', 1)
+        return key.strip(), value.strip()
+    return None, None
+
+def parse_table_cells(cells):
+    """ Parses table cells into key-value pairs assuming alternating cells for keys and values. """
+    key_value_pairs = {}
+    row_data = []
+    for cell in cells:
+        row_data.append(cell.text.strip())
+        if len(row_data) == 2:
+            key_value_pairs[row_data[0]] = row_data[1]
+            row_data = []
+    return key_value_pairs
 
 @app.route('/form_ocr', methods=['GET'])
 def get_data():
@@ -31,24 +43,21 @@ def get_data():
         
         key_value_pairs = {}
         for page in form_result:
-            for table in page.tables:
-                cells = {}
-                for cell in table.cells:
-                    if cell.row_index not in cells:
-                        cells[cell.row_index] = {}
-                    cells[cell.row_index][cell.column_index] = cell.text
-                
-                for row in cells.values():
-                    if 0 in row and 1 in row:  # Assuming the first column is 'field' and the second column is 'value'
-                        key = row[0].strip()
-                        value = clean_value(row[1].strip())
-                        key_value_pairs[key] = value
-            
-            # Extract other form data as strings
+            # Extract lines of text
             for line in page.lines:
                 text = line.text.strip()
-                if text and text not in key_value_pairs:
-                    key_value_pairs[text] = text
+                if text:
+                    key, value = parse_line(text)
+                    if key and value:
+                        key_value_pairs[key] = value
+
+            # Extract table data
+            for table in page.tables:
+                cells = []
+                for cell in table.cells:
+                    cells.append(cell)
+                table_data = parse_table_cells(cells)
+                key_value_pairs.update(table_data)
 
         return jsonify(key_value_pairs)
 
