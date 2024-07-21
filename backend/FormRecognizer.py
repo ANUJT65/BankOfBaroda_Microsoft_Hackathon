@@ -43,9 +43,14 @@ def get_data():
                         key = row[0].strip()
                         value = clean_value(row[1].strip())
                         key_value_pairs[key] = value
-        
-        # Check if a specific field is present
-            return jsonify(key_value_pairs)
+            
+            # Extract other form data as strings
+            for line in page.lines:
+                text = line.text.strip()
+                if text and text not in key_value_pairs:
+                    key_value_pairs[text] = text
+
+        return jsonify(key_value_pairs)
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
