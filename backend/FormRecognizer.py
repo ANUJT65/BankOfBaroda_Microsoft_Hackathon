@@ -2,6 +2,10 @@ import json
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.formrecognizer import FormRecognizerClient
 from flask import Flask, jsonify, request
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
 
 # Load credentials
 credentials = json.load(open('C:/Pratham/Academics/BTech/TY/hackathons/bob_hackathon/backend/credentials.json'))
@@ -42,14 +46,26 @@ def get_data():
         form_result = poller.result()
         
         key_value_pairs = {}
+        current_key = None
+        
         for page in form_result:
             # Extract lines of text
             for line in page.lines:
                 text = line.text.strip()
+                logging.debug(f'Line text: {text}')
                 if text:
-                    key, value = parse_line(text)
-                    if key and value:
-                        key_value_pairs[key] = value
+                    if current_key is None:
+                        if ':' in text:
+                            key, value = parse_line(text)
+                            if key and value:
+                                key_value_pairs[key] = value
+                            else:
+                                current_key = text
+                        else:
+                            current_key = text
+                    else:
+                        key_value_pairs[current_key] = text
+                        current_key = None
 
             # Extract table data
             for table in page.tables:
@@ -57,11 +73,14 @@ def get_data():
                 for cell in table.cells:
                     cells.append(cell)
                 table_data = parse_table_cells(cells)
+                logging.debug(f'Table data: {table_data}')
                 key_value_pairs.update(table_data)
 
+        logging.debug(f'Final key-value pairs: {key_value_pairs}')
         return jsonify(key_value_pairs)
 
     except Exception as e:
+        logging.error(f'Error: {e}')
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
