@@ -15,6 +15,7 @@ import { UserProvider } from './contexts/userContext';
 import CustDash2 from './pages/CustDash2';
 import DashboardPL from './pages/DashboardPL';
 import SingleApplication from './pages/SingleApplication';
+import BankDash2 from './pages/BankDash2';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/newcustdb" element={<CustDash2 />} />
         <Route path="/dashboardPL" element={<DashboardPL />} />
         <Route path="/singleapplication" element={<SingleApplication />} />
+        <Route path="/newbankdb" element={<BankDash2 />} />
 
       </Routes>
     </BrowserRouter>

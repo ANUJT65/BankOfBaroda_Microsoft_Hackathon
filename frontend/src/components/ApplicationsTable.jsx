@@ -79,8 +79,7 @@ const ApplicationsTable = () => {
       <tbody className=''>
         {entries.map((entry, index)=>(
           <TableEntry tag={entry.tag} type={entry.type} applicant={entry.applicant} ml_score={entry.ml_score} />
-        ))
-        }
+        ))}
       </tbody>
     </table>
   );
