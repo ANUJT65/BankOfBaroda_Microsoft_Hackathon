@@ -2,7 +2,7 @@ import React from 'react';
 import ClusteredBarChart from './ClusteredBarChart';
 import NewApplicationMenu from './NewApplicationMenu';
 
-const BankDashGrid = () => {
+const CustDashGrid = () => {
   return (
     <div className='grid grid-cols-12 gap-3 mx-10 mt-2'>
       <div className='bg-white col-span-4 rounded-md p-3 flex flex-col'>
@@ -90,4 +90,4 @@ const BankDashGrid = () => {
   );
 }
 
-export default BankDashGrid;
+export default CustDashGrid;

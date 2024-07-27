@@ -12,8 +12,9 @@ import BankDashboard from './pages/BankDashboard';
 import BankMails from './pages/BankMails';
 import DataChat from './pages/DataChat';
 import { UserProvider } from './contexts/userContext';
-import BankDash2 from './pages/BankDash2';
+import CustDash2 from './pages/CustDash2';
 import DashboardPL from './pages/DashboardPL';
+import SingleApplication from './pages/SingleApplication';
 
 const App = () => {
   return (
@@ -28,8 +29,9 @@ const App = () => {
         <Route path="/bankdashboard" element={<BankDashboard />} />
         <Route path="/bankmails" element={<BankMails />} />
         <Route path="/datachat" element={<DataChat />} />
-        <Route path="/newbankdb" element={<BankDash2 />} />
+        <Route path="/newcustdb" element={<CustDash2 />} />
         <Route path="/dashboardPL" element={<DashboardPL />} />
+        <Route path="/singleapplication" element={<SingleApplication />} />
 
       </Routes>
     </BrowserRouter>
