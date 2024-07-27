@@ -26,8 +26,10 @@ const BankDashGrid = () => {
         'Content': 'Sit down bitch yeah sit down',
         'Time': '11:11 AM',
       }
+
   ]
 
+  const emailCategories = ['Category 1', 'Category 2', 'Category 3'];
 
   return (
     <div className='grid grid-cols-12 gap-3 mx-10 mt-2'>
@@ -90,6 +92,16 @@ const BankDashGrid = () => {
                 <button className='bg-[#FF5B2E] py-3 px-3 rounded-r hover:bg-black hover:text-white hover:font-bold '>🔎</button> 
             </div>
         </div>
+        
+        {
+          category === 'Emails' ? (
+          <div className='flex justify-start mt-3'>
+          {emailCategories.map((cat, index) => (
+          <button key={index} className='bg-white text-black border border-black hover:bg-black hover:text-white hover:font-bold py-1 px-4 mr-3 rounded'>{cat}</button>
+          ))}
+          </div>) : null
+}
+
         {
           category=='Applications'? <Table header={he} content={applications}/> : <Table header={emailHeaders} content={emails}/>
         }

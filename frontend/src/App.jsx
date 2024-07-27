@@ -16,6 +16,7 @@ import CustDash2 from './pages/CustDash2';
 import DashboardPL from './pages/DashboardPL';
 import SingleApplication from './pages/SingleApplication';
 import BankDash2 from './pages/BankDash2';
+import Login3 from './pages/Login3';
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login3 />} />
         <Route path="/login2" element={<Login2 />} />
         <Route path="/application" element={<Application />} />
         <Route path="/bankdashboard" element={<BankDashboard />} />
