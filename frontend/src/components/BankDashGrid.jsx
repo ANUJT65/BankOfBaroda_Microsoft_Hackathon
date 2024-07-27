@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ClusteredBarChart from './ClusteredBarChart';
 import NewApplicationMenu from './NewApplicationMenu';
 import Table from './Table';
+import { categoryContext } from '../contexts/categoryContext';
+import { cardActionAreaClasses } from '@mui/material';
 
 const BankDashGrid = () => {
+  const { category, setCategory } = useContext(categoryContext)
+
   const he = ['Application Type', 'Application ID', 'Name of Applicant', 'Date', 'Azure ML score']
+  const emailHeaders = ['Sender', 'Content', 'Time']
   const applications=[
     {
         'Application Type' : 'Home Loan',
@@ -13,6 +18,14 @@ const BankDashGrid = () => {
         'Date': '11 Jun 2024',
         'Azure ML Score': 'Safe'
     }
+  ]
+
+    const emails=[
+      {
+        'Sender' : 'Bank of America',
+        'Content': 'Sit down bitch yeah sit down',
+        'Time': '11:11 AM',
+      }
   ]
 
 
@@ -54,8 +67,11 @@ const BankDashGrid = () => {
         <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'>
           DataChat
         </button>
-        <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'>
-          AzureML Classified Emails
+        <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md' onClick={()=> {
+          if(category=='Applications') setCategory('Emails');
+          else { setCategory('Applications')}
+        }}>
+          {category=='Emails' ? <>Applications</>: <>Emails</>}
         </button>
         <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'>
           Logout
@@ -65,17 +81,19 @@ const BankDashGrid = () => {
       <div className='bg-white col-span-9 rounded-md flex flex-col p-4'>
         <div className=' flex justify-between'>
             <div className='flex flex-col'>
-                <div className='font-bold text-xl'>Your Applications</div>
-                <div className='text-[#666666]'>Keep track of your bank applications here</div>
+                <div className='font-bold text-xl'>{category}</div>
+                <div className='text-[#666666]'>Keep track of your bank {category} here</div>
             </div>
             
             <div className='search flex justify-center'>
-                <input className='bg-gray-200 w-96 py-3 px-3 rounded-l' placeholder='Search Applications..'></input>
+                <input className='bg-gray-200 w-96 py-3 px-3 rounded-l' placeholder={`Search ${category}..  `}></input>
                 <button className='bg-[#FF5B2E] py-3 px-3 rounded-r hover:bg-black hover:text-white hover:font-bold '>🔎</button> 
             </div>
         </div>
+        {
+          category=='Applications'? <Table header={he} content={applications}/> : <Table header={emailHeaders} content={emails}/>
+        }
         
-        <Table header={he} content={applications}/>
       </div>
     </div>
   )

@@ -34,7 +34,6 @@ const App = () => {
         <Route path="/dashboardPL" element={<DashboardPL />} />
         <Route path="/singleapplication" element={<SingleApplication />} />
         <Route path="/newbankdb" element={<BankDash2 />} />
-
       </Routes>
     </BrowserRouter>
     </UserProvider>
