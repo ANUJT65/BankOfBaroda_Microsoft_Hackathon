@@ -1,29 +1,33 @@
-import React from 'react'
-import Button from '@mui/material/Button';
+import React, { useContext, useEffect } from 'react';
 import Avatar from '@mui/material/Avatar';
-
-
+import { UserContext } from '../contexts/userContext';
 
 const Navbar = () => {
+  const { user, setUser } = useContext(UserContext);
+
+  useEffect(() => {
+    setUser({ name: 'John Doe', designation: 'BOB Gold Member' });
+  }, [setUser]);
+
   return (
-    <>
     <div className='bg-[#ff5b2e] shadow-md flex justify-between py-2'>
       <div className='flex justify-start'>
-        <img src='./logo copy.png' className='h-14 pl-10'></img>
-        <div className='text-3xl font-bold italic text-white text-italic pt-2 pl-2'>Walter White</div>
-      </div>
-      <div className='flex'>
-        <Avatar sx={{ bgcolor: '#000000' }} className='mt-2 mr-5 bg-black'>AT</Avatar>
-        <div className='flex flex-col pr-4'>
-          <div className='font-bold'>Anuj Tadkase</div>
-          <div className='text-white'>BOB Gold Member</div>
+        <img src='./logo copy.png' alt='Logo' className='h-14 pl-10' />
+        <div className='text-3xl font-bold italic text-white pt-2 pl-2'>
+          Walter White
         </div>
       </div>
-        
+      <div className='flex'>
+        <Avatar sx={{ bgcolor: '#000000' }} className='mt-2 mr-5 bg-black'>
+          {user?.name?.[0]}
+        </Avatar>
+        <div className='flex flex-col pr-4'>
+          <div className='font-bold'>{user?.name}</div>
+          <div className='text-white'>{user?.designation}</div>
+        </div>
+      </div>
     </div>
-    </>
-  )
-}
+  );
+};
 
-
-export default Navbar
+export default Navbar;
