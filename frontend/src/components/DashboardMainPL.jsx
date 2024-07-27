@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import ApplicationCard from './ApplicationCard';
-import NewApplicationForm from './NewApplicationForm';
+import ApplicationCardPL from './ApplicationCardPL';
+import NewApplicationFormPL from './NewApplicationFormPL';
 
-const DashboardMain = () => {
+const DashboardMainPL = () => {
   const [applications, setApplications] = useState([]);
   const [showNewApplicationForm, setShowNewApplicationForm] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  
 
   useEffect(() => {
     const fetchApplications = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:5000/bussinessloan/user_to_data?user_id=12735');
+        const response = await fetch('http://127.0.0.1:5000/personalloan/get_customer_info?Customer_ID=3392');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -54,15 +53,15 @@ const DashboardMain = () => {
       <div>
         {applications.length > 0 ? (
           applications.map((application) => (
-            <ApplicationCard key={application.application_id} application={application} />
+            <ApplicationCardPL key={application.Application_id} application={application} />
           ))
         ) : (
           <div>No applications found</div>
         )}
       </div>
-      {showNewApplicationForm && <NewApplicationForm onClose={handleCloseForm} />}
+      {showNewApplicationForm && <NewApplicationFormPL onClose={handleCloseForm} />}
     </div>
   );
 };
 
-export default DashboardMain;
+export default DashboardMainPL;
