@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useNavigate } from 'react';
 import ApplicationCard from './ApplicationCard';
 import NewApplicationForm from './NewApplicationForm';
 
@@ -39,6 +39,17 @@ const DashboardMain = () => {
           onClick={handleNewApplicationClick}
         >
           New Application
+        </button>
+        <button
+          className='bg-[#ff5b2e] text-white px-5 py-2 mx-4 rounded-md font-bold'
+          onClick={handleNewApplicationClick}
+        >
+          New Personal Loan Application
+        </button>
+        <button
+          className='bg-[#ff5b2e] text-white px-5 py-2 mx-4 rounded-md font-bold'
+        >
+          New Business Loan Application
         </button>
       </div>
       <h2 className='text-2xl font-bold mb-4'>Your Applications</h2>
