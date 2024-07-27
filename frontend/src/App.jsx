@@ -12,6 +12,7 @@ import BankDashboard from './pages/BankDashboard';
 import BankMails from './pages/BankMails';
 import DataChat from './pages/DataChat';
 import { UserProvider } from './contexts/userContext';
+import BankDash2 from './pages/BankDash2';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/bankdashboard" element={<BankDashboard />} />
         <Route path="/bankmails" element={<BankMails />} />
         <Route path="/datachat" element={<DataChat />} />
+        <Route path="/newbankdb" element={<BankDash2 />} />
       </Routes>
     </BrowserRouter>
     </UserProvider>
