@@ -21,6 +21,8 @@ const applications = [
 ];
 
 const DashboardMain = () => {
+  const navigate = useNavigate();
+
   const [showNewApplicationForm, setShowNewApplicationForm] = useState(false);
 
   const handleNewApplicationClick = () => {
@@ -42,12 +44,13 @@ const DashboardMain = () => {
         </button>
         <button
           className='bg-[#ff5b2e] text-white px-5 py-2 mx-4 rounded-md font-bold'
-          onClick={handleNewApplicationClick}
+          onClick={navigate('/dashboard')}
         >
           New Personal Loan Application
         </button>
         <button
           className='bg-[#ff5b2e] text-white px-5 py-2 mx-4 rounded-md font-bold'
+          onClick={navigate('/dashboard')}
         >
           New Business Loan Application
         </button>
