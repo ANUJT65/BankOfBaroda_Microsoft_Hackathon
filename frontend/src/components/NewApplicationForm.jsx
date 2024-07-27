@@ -2,52 +2,66 @@ import React, { useState } from 'react';
 
 const NewLoanApplicationForm = ({ onClose }) => {
   const [step, setStep] = useState(1);
-  const [documents, setDocuments] = useState([]);
+  const [documentLink, setDocumentLink] = useState('');
   const [info, setInfo] = useState('');
-  const [attestation, setAttestation] = useState(false);
   const [loanApplication, setLoanApplication] = useState(null);
 
-  const handleDocumentChange = (event) => {
-    setDocuments([...documents, ...event.target.files]);
+  const handleLinkChange = (event) => {
+    setDocumentLink(event.target.value);
   };
 
   const handleInfoChange = (event) => {
     setInfo(event.target.value);
   };
 
-  const handleAttestationChange = (event) => {
-    setAttestation(event.target.checked);
-  };
-
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     if (step === 1) {
-      // Validate documents and move to next step
-      if (documents.length > 0) {
+      if (documentLink.trim() !== '') {
         setStep(2);
       } else {
-        alert('Please attach at least one document.');
+        alert('Please provide a document link.');
       }
     } else if (step === 2) {
-      // Validate additional information and move to next step
       if (info.trim() !== '') {
-        setStep(3);
-      } else {
-        alert('Please provide additional information.');
-      }
-    } else if (step === 3) {
-      // Validate attestation and submit loan application
-      if (attestation) {
-        // Simulate submission (in a real application, this would be an API call)
-        const application = {
-          documents,
-          info,
-          status: 'Under Review', // Initial status
+        // Construct the data to send
+        const applicationData = {
+          user_id: info,
+          link: documentLink,
         };
-        setLoanApplication(application);
-        setStep(4); // Move to next step after submission
+
+        try {
+          const response = await fetch('http://127.0.0.1:5000/bussinessloan/calculate_and_send', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(applicationData),
+          });
+
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+
+          const result = await response.json();
+
+          // Log the JSON response to the console
+          console.log('Response JSON:', result);
+
+          // Update state with application details
+          setLoanApplication({
+            documentLink,
+            info,
+            status: 'Under Review', // Initial status
+            id: result.application_id, // Extract the application ID from the response
+          });
+          setStep(3); // Move to next step after submission
+        } catch (error) {
+          console.error('Error submitting application:', error);
+          alert('There was a problem submitting your application. Please try again.');
+        }
       } else {
-        alert('Please sign the attestation.');
+        alert('Please provide User Id.');
       }
     }
   };
@@ -59,8 +73,14 @@ const NewLoanApplicationForm = ({ onClose }) => {
         {step === 1 && (
           <form onSubmit={handleSubmit}>
             <div className='mb-4'>
-              <label className='block mb-2 font-bold'>Attach Documents</label>
-              <input type='file' multiple onChange={handleDocumentChange} />
+              <label className='block mb-2 font-bold'>Enter Document Link</label>
+              <input
+                type='text'
+                value={documentLink}
+                onChange={handleLinkChange}
+                className='w-full p-2 border rounded-md'
+                placeholder='Enter document link'
+              />
             </div>
             <div className='flex justify-end'>
               <button
@@ -102,42 +122,12 @@ const NewLoanApplicationForm = ({ onClose }) => {
                 type='submit'
                 className='bg-[#ff5b2e] text-white px-4 py-2 rounded-md'
               >
-                Next
+                Submit
               </button>
             </div>
           </form>
         )}
         {step === 3 && (
-          <form onSubmit={handleSubmit}>
-            <div className='mb-4'>
-              <label className='flex items-center'>
-                <input
-                  type='checkbox'
-                  checked={attestation}
-                  onChange={handleAttestationChange}
-                  className='mr-2'
-                />
-                Sign Attestation
-              </label>
-            </div>
-            <div className='flex justify-end'>
-              <button
-                type='button'
-                onClick={() => setStep(2)}
-                className='mr-4 bg-gray-400 text-white px-4 py-2 rounded-md'
-              >
-                Back
-              </button>
-              <button
-                type='submit'
-                className='bg-[#ff5b2e] text-white px-4 py-2 rounded-md'
-              >
-                Submit Application
-              </button>
-            </div>
-          </form>
-        )}
-        {step === 4 && (
           <div>
             <h3 className='text-xl font-bold mb-2'>Application Submitted Successfully!</h3>
             <p className='mb-4'>Application ID: {loanApplication && loanApplication.id}</p>
