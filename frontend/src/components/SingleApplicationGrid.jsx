@@ -1,10 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import ApplicationDetailsTable from './ApplicationDetailsTable';
-import AIResponse from './AIResponse';
-import HumanQuery from './HumanQuery';
 import DataChat from './DataChat';
 
 const SingleApplicationGrid = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleNavigation = (path) => () => {
+    navigate(path); // Navigate to the specified path
+  };
+
   const details = [
     { "Name": "Virat Kohli" },
     { "Assets": "10 Cr" },
@@ -20,10 +25,16 @@ const SingleApplicationGrid = () => {
       <div className='col-span-2 bg-white flex flex-col p-5'>
         <div className='font-bold text-xl'>Quick Links</div>
         <div className='text-[#666666]'>Navigate between your actions</div>
-        <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'>
+        <button 
+          onClick={handleNavigation('/bankmails')} 
+          className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'
+        >
           AzureML Classified Emails
         </button>
-        <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'>
+        <button 
+          onClick={handleNavigation('/dashboard')} // Add path for Dashboard
+          className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'
+        >
           Dashboard
         </button>
 
@@ -49,7 +60,6 @@ const SingleApplicationGrid = () => {
 
         <div className='bg-white mt-2 flex flex-col p-5'>
           <div className='font-bold text-xl'>Application</div>
-          <ApplicationDetailsTable details={details} />
           <div className='mt-10 bg-gradient-to-r from-[#008000] to-[#49A402] rounded flex flex-col p-5'>
             <div className='text-white text-sm'>Azure ML Prediction</div>
             <div className='text-white text-4xl font-bold'>Safe</div>

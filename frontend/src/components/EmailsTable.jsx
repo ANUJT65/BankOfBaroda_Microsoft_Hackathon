@@ -1,91 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import TableEntry from './TableEntry';
-import EmailEntry from './EmailEntry';
+import React, { useEffect, useState } from 'react';
 
-const EmailsTable = () => {
-  const [data, setData] = useState(null); // State to hold response data
-  const [loading, setLoading] = useState(true); // State to manage loading state
-  const [error, setError] = useState(null); // State to manage errors
+const EmailsTable = ({ category }) => {
+  const [emails, setEmails] = useState([]);
 
   useEffect(() => {
-    const postData = async () => {
-      const url = 'http://127.0.0.1:5000/bussinessloan/calculate_and_send';
-      const bodyData = {
-        "user_id": "1273",
-        "link": "https://raw.githubusercontent.com/ANUJT65/bob_hackathon/main/backend/business%20form%20(2).jpg"
+    if (category) {
+      const fetchEmails = async () => {
+        try {
+          const response = await fetch(`http://127.0.0.1:5000/emailclassify/${encodeURIComponent(category)}`);
+          
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          const data = await response.json();
+          setEmails(data);
+        } catch (error) {
+          console.error('There was a problem with the fetch operation:', error);
+        }
       };
 
-      try {
-        const response = await fetch(url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(bodyData)
-        });
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const result = await response.json();
-        setData(result);
-        console.log(result);
-      } catch (error) {
-        setError(error.message);
-        console.error('Error:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    postData();
-  }, []); // Empty dependency array ensures this runs once when component mounts
-
-  const emails = [
-    {
-      sender: 'Bank of America',
-      preview: 'Hello Sir, I on behalf of Bank of America would like to extend a heartf...',
-      time: '9:30 PM',
-      read: false
-    },
-    {
-      sender: 'Ravindra Jadeja',
-      preview: 'There was an unauthorized Rs50000 withdrawal from my account on...',
-      time: '11:11 AM',
-      read: true
-    },
-    // Add more email objects here...
-  ];
+      fetchEmails();
+    }
+  }, [category]);
 
   return (
     <div>
-      {loading ? (
-        <p>Loading...</p>
-      ) : error ? (
-        <p>Error: {error}</p>
-      ) : (
-        <table className="table-auto w-full">
+      {emails.length > 0 ? (
+        <table className='min-w-full bg-white border border-gray-200'>
           <thead>
-            <tr>
-              <th></th>
-              <th className="text-left px-4 py-2">Sender</th>
-              <th className="text-left px-4 py-2">Body</th>
-              <th className="text-left px-4 py-2">Time</th>
+            <tr className='bg-gray-100 border-b'>
+              <th className='p-2 text-left'>Email ID</th>
+              <th className='p-2 text-left'>Classification Date</th>
+              <th className='p-2 text-left'>Email Content</th>
             </tr>
           </thead>
           <tbody>
-            {emails.map((email, index) => (
-              <EmailEntry
-                key={index} // Add a unique key prop
-                sender={email.sender}
-                preview={email.preview}
-                time={email.time}
-                read={email.read}
-              />
+            {emails.map((email) => (
+              <tr key={email.application_id} className='border-b'>
+                <td className='p-2'>{email.email_id}</td>
+                <td className='p-2'>{new Date(email.classification_date).toLocaleString()}</td>
+                <td className='p-2'>{email.email_content}</td>
+              </tr>
             ))}
           </tbody>
         </table>
+      ) : (
+        <p className='text-center'>No emails found for this category.</p>
       )}
     </div>
   );

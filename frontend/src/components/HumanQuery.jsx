@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const HumanQuery = ({message}) => {
+const HumanQuery = ({ message }) => {
   return (
-    <div className='mb-2 flex justify-end'>
-    <div className='bg-black rounded bg-gray-100 pt-2 font-semibold px-3 text-left'>{message}</div>
-    <div className='bg-black rounded-full p-2 w-10 font-bold text-center text-white text-s mr-2'>J</div>
+    <div className='mb-2 flex justify-end items-center'>
+      <div className='bg-gray-100 rounded-lg py-2 px-3 text-left font-semibold text-black'>
+        {message}
+      </div>
+      <div className='bg-black rounded-full p-2 w-10 h-10 flex items-center justify-center font-bold text-white text-s ml-2'>
+        J
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default HumanQuery
+export default HumanQuery;
