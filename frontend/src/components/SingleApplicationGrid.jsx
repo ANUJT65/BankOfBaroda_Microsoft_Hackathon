@@ -1,14 +1,62 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import ApplicationDetailsTable from './ApplicationDetailsTable';
 import DataChat from './DataChat';
 
 const SingleApplicationGrid = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const { applicationId } = useParams();
+  const navigate = useNavigate();
+  const [applicationData, setApplicationData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  console.log(applicationId);
+
+  useEffect(() => {
+    axios.get(`http://127.0.0.1:5000/bussinessloan/get_data_from_applicationid/${applicationId}`)
+      .then(response => {
+        setApplicationData(response.data);
+        setLoading(false);
+      })
+      .catch(error => {
+        setError(error);
+        setLoading(false);
+      });
+  }, [applicationId]);
 
   const handleNavigation = (path) => () => {
-    navigate(path); // Navigate to the specified path
+    navigate(path);
   };
+
+  const handleReject = () => {
+    axios.post(`http://127.0.0.1:5000/bussinessloan/set_to_rejected/${applicationId}`)
+      .then(response => {
+        alert(response.data.message);
+        setApplicationData({ ...applicationData, Status: 'rejected' }); // Update the status locally
+      })
+      .catch(error => {
+        alert(`Error: ${error.response.data.error}`);
+      });
+  };
+
+  const handleAccept = () => {
+    axios.post(`http://127.0.0.1:5000/bussinessloan/set_to_accepted/${applicationId}`)
+      .then(response => {
+        alert(response.data.message);
+        setApplicationData({ ...applicationData, Status: 'accepted' }); // Update the status locally
+      })
+      .catch(error => {
+        alert(`Error: ${error.response.data.error}`);
+      });
+  };
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
   const details = [
     { "Name": "Virat Kohli" },
@@ -29,10 +77,10 @@ const SingleApplicationGrid = () => {
           onClick={handleNavigation('/bankmails')} 
           className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'
         >
-          AzureML Classified Emails
+          AzureML Classified Emails 
         </button>
         <button 
-          onClick={handleNavigation('/dashboard')} // Add path for Dashboard
+          onClick={handleNavigation('/dashboard')} 
           className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'
         >
           Dashboard
@@ -51,10 +99,12 @@ const SingleApplicationGrid = () => {
           <div className='text-3xl mt-2 mb-4'>Personal Loan Application</div>
           <div className='flex justify-between'>
             <div className='flex flex-col'>
-              <div className='text-[#666666]'>Account no: 12345678</div>
-              <div className='text-[#666666]'>3d ago</div>
+              <div className='text-[#666666]'>Company : {applicationData.company_name}</div>
+              <div className='text-[#666666]'>Audit Agency : {applicationData.auditing_company_name}</div>
             </div>
-            <div className='bg-[#E3DA00] p-3 font-bold rounded'>Status: Under Review</div>
+            <div className={`p-3 font-bold rounded ${applicationData.Status === 'rejected' ? 'bg-[#FF0000]' : applicationData.Status === 'accepted' ? 'bg-[#008000]' : 'bg-[#E3DA00]'}`}>
+              Status: {applicationData.Status}
+            </div>
           </div>
         </div>
 
@@ -62,7 +112,7 @@ const SingleApplicationGrid = () => {
           <div className='font-bold text-xl'>Application</div>
           <div className='mt-10 bg-gradient-to-r from-[#008000] to-[#49A402] rounded flex flex-col p-5'>
             <div className='text-white text-sm'>Azure ML Prediction</div>
-            <div className='text-white text-4xl font-bold'>Safe</div>
+            <div className='text-white text-4xl font-bold'>{applicationData.result}</div>
           </div>
           <div className='mt-5 flex flex-col'>
             <div>Attached Documents</div>
@@ -74,9 +124,18 @@ const SingleApplicationGrid = () => {
         </div>
 
         <div className='bg-white mt-2 flex justify-between mb-3'>
-          <button className='border border-black w-full mr-2 text-center py-2 rounded hover:bg-[#FF0000]
-            hover:text-white hover:font-bold hover:border-[#FF0000]'>Reject</button>
-          <button className='border border-black w-full ml-2 text-center py-2 rounded bg-black text-white hover:bg-[#008000] hover:font-bold'>Approve</button>
+          <button 
+            className='border border-black w-full mr-2 text-center py-2 rounded hover:bg-[#FF0000] hover:text-white hover:font-bold hover:border-[#FF0000]' 
+            onClick={handleReject}
+          >
+            Reject
+          </button>
+          <button 
+            className='border border-black w-full ml-2 text-center py-2 rounded bg-black text-white hover:bg-[#008000] hover:font-bold' 
+            onClick={handleAccept}
+          >
+            Approve
+          </button>
         </div>
       </div>
 

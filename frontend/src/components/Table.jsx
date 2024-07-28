@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Table = ({ header, content }) => {
   return (
@@ -13,8 +14,16 @@ const Table = ({ header, content }) => {
       <tbody>
         {content.map((entry, rowIndex) => (
           <tr key={rowIndex} className='border-b'>
-            {Object.values(entry).map((value, colIndex) => (
-              <td key={colIndex} className='px-4 py-2 text-left'>{value}</td>
+            {Object.entries(entry).map(([key, value], colIndex) => (
+              <td key={colIndex} className='px-4 py-2 text-left'>
+                {key === 'Application ID' ? (
+                  <Link to={`/singleapplication/${value}`} className='text-blue-500 hover:underline'>
+                    {value}
+                  </Link>
+                ) : (
+                  value
+                )}
+              </td>
             ))}
           </tr>
         ))}
