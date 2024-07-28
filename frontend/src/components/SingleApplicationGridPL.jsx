@@ -13,7 +13,7 @@ const SingleApplicationGrid = () => {
   console.log(applicationId);
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:5000/bussinessloan/get_data_from_applicationid/${applicationId}`)
+    axios.get(`http://127.0.0.1:5000/personalloan/get_data_from_applicationid/${applicationId}`)
       .then(response => {
         setApplicationData(response.data);
         setLoading(false);
@@ -29,7 +29,7 @@ const SingleApplicationGrid = () => {
   };
 
   const handleReject = () => {
-    axios.post(`http://127.0.0.1:5000/bussinessloan/set_to_rejected/${applicationId}`)
+    axios.post(`http://127.0.0.1:5000/personalloan/set_to_rejected/${applicationId}`)
       .then(response => {
         alert(response.data.message);
         setApplicationData({ ...applicationData, Status: 'rejected' }); // Update the status locally
@@ -40,7 +40,7 @@ const SingleApplicationGrid = () => {
   };
 
   const handleAccept = () => {
-    axios.post(`http://127.0.0.1:5000/bussinessloan/set_to_accepted/${applicationId}`)
+    axios.post(`http://127.0.0.1:5000/personalloan/set_to_accepted/${applicationId}`)
       .then(response => {
         alert(response.data.message);
         setApplicationData({ ...applicationData, Status: 'accepted' }); // Update the status locally
@@ -96,12 +96,12 @@ const SingleApplicationGrid = () => {
       <div className='col-span-3 flex flex-col'>
         <div className='bg-white mb-2 flex flex-col p-5'>
           <div className='font-bold text-xl'>Application Overview</div>
-          <div className='text-3xl mt-2 mb-4'>Bussiness Loan</div>
+          <div className='text-3xl mt-2 mb-4'>Personal Loan Application</div>
           <div className='flex justify-between'>
             <div className='flex flex-col'>
-              <div className='text-[#666666]'>Company : {applicationData.company_name}</div>
-              <div className='text-[#666666]'>Audit Agency : {applicationData.auditing_company_name}</div>
-              <div className='text-[#666666]'>Application Id  : {applicationData.application_id}</div>
+              <div className='text-[#666666]'>Name : {applicationData.Name}</div>
+              <div className='text-[#666666]'>Type of Loan : {applicationData.Type_of_Loan}</div>
+              <div className='text-[#666666]'>Application Id : {applicationData.Application_id}</div>
 
             </div>
             <div className={`p-3 font-bold rounded ${applicationData.Status === 'rejected' ? 'bg-[#FF0000]' : applicationData.Status === 'accepted' ? 'bg-[#008000]' : 'bg-[#E3DA00]'}`}>
@@ -114,7 +114,7 @@ const SingleApplicationGrid = () => {
           <div className='font-bold text-xl'>Application</div>
           <div className='mt-10 bg-gradient-to-r from-[#008000] to-[#49A402] rounded flex flex-col p-5'>
             <div className='text-white text-sm'>Azure ML Prediction</div>
-            <div className='text-white text-4xl font-bold'>{applicationData.result}</div>
+            <div className='text-white text-4xl font-bold'>{applicationData.Result}</div>
           </div>
           <div className='mt-5 flex flex-col'>
             <div>Attached Documents</div>

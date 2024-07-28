@@ -16,6 +16,7 @@ import CustDash2 from './pages/CustDash2';
 import DashboardPL from './pages/DashboardPL';
 import SingleApplication from './pages/SingleApplication';
 import BankDash2 from './pages/BankDash2';
+import SingleApplicationPL from './pages/SinglePageApplicationPL';
 import Login3 from './pages/Login3';
 import NewHome from './pages/NewHome';
 
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/dashboardPL" element={<DashboardPL />} />
           <Route path="/singleapplication/:applicationId" element={<SingleApplication />} /> {/* Update this line */}
           <Route path="/newbankdb" element={<BankDash2 />} />
+          <Route path="/singleapplicationPL/:applicationId" element={<SingleApplicationPL />} />
         </Routes>
       </BrowserRouter>
     </UserProvider>

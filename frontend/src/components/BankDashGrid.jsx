@@ -4,7 +4,7 @@ import ClusteredBarChart from './ClusteredBarChart';
 import NewApplicationMenu from './NewApplicationMenu';
 import Table from './Table';
 import { categoryContext } from '../contexts/categoryContext';
-
+import TablePL from './TablePL';
 const BankDashGrid = () => {
   const { category, setCategory } = useContext(categoryContext);
   const [applications, setApplications] = useState([]);
@@ -94,10 +94,9 @@ const BankDashGrid = () => {
           DataChat
         </button>
         <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md' onClick={() => {
-          if (category === 'Applications') setCategory('Emails');
-          else setCategory('Applications');
+          setCategory('Applications');
         }}>
-          {category === 'Emails' ? 'Applications' : 'Emails'}
+          Personal Loan
         </button>
         <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'>
           Logout
@@ -128,7 +127,8 @@ const BankDashGrid = () => {
           </div>
         ) : null}
 
-        {category === 'Applications' && <Table header={he} content={applications} />}
+        {category === 'Applications' && <TablePL header={he} content={applications} />}
+
         {category === 'Emails' && <Table header={emailHeaders} content={emails} />}
         {category === 'Business Loans' && <Table header={businessLoanHeaders} content={businessLoans} linkColumn="Application ID" />}
       </div>
