@@ -17,13 +17,14 @@ import DashboardPL from './pages/DashboardPL';
 import SingleApplication from './pages/SingleApplication';
 import BankDash2 from './pages/BankDash2';
 import Login3 from './pages/Login3';
+import NewHome from './pages/NewHome';
 
 const App = () => {
   return (
     <UserProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<NewHome />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login3 />} />
           <Route path="/login2" element={<Login2 />} />
