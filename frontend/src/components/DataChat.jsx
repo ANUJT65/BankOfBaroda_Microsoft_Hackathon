@@ -41,6 +41,15 @@ const DataChat = () => {
     <div className='col-span-3 bg-white flex flex-col p-5 h-full'>
       <div className='font-bold text-xl'>DataChat</div>
       <div className='text-[#666666]'>Chat with the database and customer application</div>
+      <div className='text-[#666666]'>Customer Personal Loan Table Name : PersonalApplication</div>
+      <div className='text-[#666666]'>Customer Bussiness Loan Table Name : LoanApplications</div>
+      <div className='text-[#666666]'>Customer Email Classifiaction Table Name : EmailClassifications </div>
+      <div></div>
+      <div></div>
+
+      <div></div>
+
+
       <div className='flex flex-col mt-auto overflow-auto' style={{ maxHeight: '70vh' }}>
         {responses.map((response, index) => (
           <div key={index}>
