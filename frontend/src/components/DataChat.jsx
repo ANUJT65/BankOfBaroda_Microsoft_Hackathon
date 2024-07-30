@@ -13,7 +13,7 @@ const DataChat = () => {
         query: inputValue // Use the input value for the query
       };
 
-      const res = await fetch('http://127.0.0.1:5000/langchain/query', {
+      const res = await fetch('https://bobcyberwardenfinal.azurewebsites.net/langchain/query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

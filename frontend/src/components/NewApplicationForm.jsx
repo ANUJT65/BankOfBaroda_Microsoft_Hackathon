@@ -31,7 +31,7 @@ const NewLoanApplicationForm = ({ onClose }) => {
         };
 
         try {
-          const response = await fetch('http://127.0.0.1:5000/bussinessloan/calculate_and_send', {
+          const response = await fetch('https://bobcyberwardenfinal.azurewebsites.net/bussinessloan/calculate_and_send', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

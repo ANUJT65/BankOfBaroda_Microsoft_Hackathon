@@ -31,7 +31,7 @@ const NewLoanApplicationFormPL = ({ onClose }) => {
         };
 
         try {
-          const response = await fetch('http://127.0.0.1:5000/personalloan/ploan', {
+          const response = await fetch('https://bobcyberwardenfinal.azurewebsites.net/personalloan/ploan', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

@@ -7,7 +7,7 @@ const EmailsTable = ({ category }) => {
     if (category) {
       const fetchEmails = async () => {
         try {
-          const response = await fetch(`http://127.0.0.1:5000/emailclassify/${encodeURIComponent(category)}`);
+          const response = await fetch(`https://bobcyberwardenfinal.azurewebsites.net/emailclassify/${encodeURIComponent(category)}`);
           
           if (!response.ok) {
             throw new Error('Network response was not ok');

@@ -13,7 +13,7 @@ const SingleApplicationGrid = () => {
   console.log(applicationId);
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:5000/personalloan/get_data_from_applicationid/${applicationId}`)
+    axios.get(`https://bobcyberwardenfinal.azurewebsites.net/personalloan/get_data_from_applicationid/${applicationId}`)
       .then(response => {
         setApplicationData(response.data);
         setLoading(false);
@@ -29,7 +29,7 @@ const SingleApplicationGrid = () => {
   };
 
   const handleReject = () => {
-    axios.post(`http://127.0.0.1:5000/personalloan/set_to_rejected/${applicationId}`)
+    axios.post(`https://bobcyberwardenfinal.azurewebsites.net/personalloan/set_to_rejected/${applicationId}`)
       .then(response => {
         alert(response.data.message);
         setApplicationData({ ...applicationData, Status: 'rejected' }); // Update the status locally
@@ -40,7 +40,7 @@ const SingleApplicationGrid = () => {
   };
 
   const handleAccept = () => {
-    axios.post(`http://127.0.0.1:5000/personalloan/set_to_accepted/${applicationId}`)
+    axios.post(`https://bobcyberwardenfinal.azurewebsites.net/personalloan/set_to_accepted/${applicationId}`)
       .then(response => {
         alert(response.data.message);
         setApplicationData({ ...applicationData, Status: 'accepted' }); // Update the status locally

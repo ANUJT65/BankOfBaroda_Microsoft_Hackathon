@@ -13,7 +13,7 @@ const CompanyAnalysisForm = () => {
     e.preventDefault();
     
     try {
-      const res = await fetch('http://127.0.0.1:5000/company_check/analyze', {
+      const res = await fetch('https://bobcyberwardenfinal.azurewebsites.net/company_check/analyze', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

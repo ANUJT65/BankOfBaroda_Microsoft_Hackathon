@@ -24,7 +24,7 @@ const BankDashGrid = () => {
 
   useEffect(() => {
     if (category === 'Applications') {
-      axios.get('http://127.0.0.1:5000/personalloan/all_loans')
+      axios.get('https://bobcyberwardenfinal.azurewebsites.net/personalloan/all_loans')
         .then(response => {
           const fetchedApplications = response.data.map(application => ({
             'Application Type': application.Type_of_Loan,
@@ -39,7 +39,7 @@ const BankDashGrid = () => {
           console.error('Error fetching applications:', error);
         });
     } else if (category === 'Business Loans') {
-      axios.get('http://127.0.0.1:5000/bussinessloan/all_loans')
+      axios.get('https://bobcyberwardenfinal.azurewebsites.net/bussinessloan/all_loans')
         .then(response => {
           const fetchedBusinessLoans = response.data.map(loan => ({
             'Application ID': loan.application_id,

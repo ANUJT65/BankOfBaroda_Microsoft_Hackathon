@@ -11,7 +11,7 @@ const DashboardMainPL = () => {
   useEffect(() => {
     const fetchApplications = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:5000/personalloan/get_customer_info?Customer_ID=3392');
+        const response = await fetch('https://bobcyberwardenfinal.azurewebsites.net/get_customer_info?Customer_ID=3392');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

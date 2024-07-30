@@ -8,7 +8,7 @@ const BankMails = () => {
   const onCategorySelect = async (category) => {
     setCategory(category);
     try {
-      const response = await fetch(`http://127.0.0.1:5000/mails?category=${encodeURIComponent(category)}`);
+      const response = await fetch(`https://bobcyberwardenfinal.azurewebsites.net/mails?category=${encodeURIComponent(category)}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
