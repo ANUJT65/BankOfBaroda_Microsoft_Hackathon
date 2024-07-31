@@ -26,7 +26,7 @@ const App = () => {
     <UserProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<NewHome />} />
+          <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login3 />} />
           <Route path="/login2" element={<Login2 />} />
