@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import ApplicationCard from './ApplicationCard';
 import NewApplicationForm from './NewApplicationForm';
 import { useNavigate } from 'react-router-dom';
@@ -14,15 +15,11 @@ const DashboardMain = () => {
   useEffect(() => {
     const fetchApplications = async () => {
       try {
-        const response = await fetch('https://bobcyberwardenfinal.azurewebsites.net/bussinessloan/user_to_data?user_id=1349');
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        setApplications(data); // Set the entire array of applications
-        console.log('Fetched Applications:', data); // Log the fetched data
+        const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/bussinessloan/user_to_data?user_id=12735');
+        setApplications(response.data); // Directly set the fetched data
+        console.log('Fetched Applications:', response.data);
       } catch (error) {
-        setError(error.message);
+        setError(error.message || 'An error occurred');
       } finally {
         setLoading(false);
       }
@@ -37,6 +34,24 @@ const DashboardMain = () => {
 
   const handleCloseForm = () => {
     setShowNewApplicationForm(false);
+  };
+
+  const handleFormSuccess = () => {
+    // Re-fetch the applications after successful form submission
+    fetchApplications();
+  };
+
+  const fetchApplications = async () => {
+    setLoading(true);
+    try {
+      const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/bussinessloan/user_to_data?user_id=12735');
+      setApplications(response.data);
+      console.log('Fetched Applications:', response.data);
+    } catch (error) {
+      setError(error.message || 'An error occurred');
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (loading) return <div>Loading...</div>;
@@ -74,7 +89,9 @@ const DashboardMain = () => {
           <div>No applications found</div>
         )}
       </div>
-      {showNewApplicationForm && <NewApplicationForm onClose={handleCloseForm} />}
+      {showNewApplicationForm && (
+        <NewApplicationForm onClose={handleCloseForm} onSuccess={handleFormSuccess} />
+      )}
     </div>
   );
 };

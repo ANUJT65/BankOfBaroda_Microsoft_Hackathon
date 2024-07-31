@@ -20,7 +20,7 @@ const BankDashGrid = () => {
 
   const he = ['Application Type', 'Application ID', 'Name of Applicant', 'Date', 'Azure ML score'];
   const emailHeaders = ['Sender', 'Content', 'Time'];
-  const businessLoanHeaders = ['Application ID', 'Company Name', 'Auditing Company Name', 'ML Score'];
+  const businessLoanHeaders = ['Application ID', 'Company Name', 'Auditing Company Name',  'Date And Time','ML Score' ];
   const emailCategories = ['Category 1', 'Category 2', 'Category 3'];
 
   useEffect(() => {
@@ -46,7 +46,9 @@ const BankDashGrid = () => {
             'Application ID': loan.application_id,
             'Company Name': loan.company_name,
             'Auditing Company Name': loan.auditing_company_name,
-            'ML Score': loan.result,
+            "Date And Time" : loan.created_at,
+            'ML Score': loan.result
+            
           }));
           setBusinessLoans(fetchedBusinessLoans);
         })
