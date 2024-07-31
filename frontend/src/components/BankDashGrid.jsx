@@ -5,6 +5,7 @@ import NewApplicationMenu from './NewApplicationMenu';
 import Table from './Table';
 import { categoryContext } from '../contexts/categoryContext';
 import TablePL from './TablePL';
+import BankPie from './BankPie';
 const BankDashGrid = () => {
   const { category, setCategory } = useContext(categoryContext);
   const [applications, setApplications] = useState([]);
@@ -55,12 +56,14 @@ const BankDashGrid = () => {
     }
   }, [category]);
 
+  const size = applications.length;
+
   return (
     <div className='grid grid-cols-12 gap-3 mx-10 mt-2'>
       <div className='bg-white col-span-4 rounded-md p-5 flex flex-col'>
         <div className='font-bold text-xl'>Overview</div>
         <div className='text-[#666666]'>Employee ID: 123456789</div>
-        <div className='text-4xl mt-5'>1096</div>
+        <div className='text-4xl mt-5'>{size}</div>
         <div className='text-[#666666]'>Total Applications</div>
 
         <div className='mt-5 flex flex-col'>
@@ -73,7 +76,7 @@ const BankDashGrid = () => {
             <div className='font-bold text-[#008000]'>+100</div>
           </div>
           <div className='flex justify-between border-b py-2'>
-            <div className='mr-20'>Replied</div>
+            <div className='mr-20'>Reapplied</div>
             <div className='font-bold text-[#008000]'>+300</div>
           </div>
         </div>
@@ -83,23 +86,17 @@ const BankDashGrid = () => {
         <div className='font-bold text-xl'>Application Statistics</div>
         <div className='text-[#666666]'>Understand patterns of incoming statistics</div>
         <div>
-          <ClusteredBarChart />
+          <BankPie />
         </div>
       </div>
 
       <div className='bg-white col-span-3 rounded-md flex flex-col p-4'>
         <div className='font-bold text-xl'>Quick Links</div>
         <div className='text-[#666666]'>Navigate between your actions</div>
-        <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'>
-          DataChat
-        </button>
         <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md' onClick={() => {
           setCategory('Applications');
         }}>
           Personal Loan
-        </button>
-        <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md'>
-          Logout
         </button>
         <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md' onClick={() => setCategory('Business Loans')}>
           Business Loan

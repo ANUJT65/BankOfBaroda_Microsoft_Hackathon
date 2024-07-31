@@ -64,7 +64,7 @@ const DashboardMain = () => {
           New Business Loan Application
         </button>
       </div>
-      <h2 className='text-2xl font-bold mb-4'>Your Applications</h2>
+      <h2 className='text-2xl font-bold mb-4'>Your Business Loan Applications</h2>
       <div>
         {applications.length > 0 ? (
           applications.map((application) => (

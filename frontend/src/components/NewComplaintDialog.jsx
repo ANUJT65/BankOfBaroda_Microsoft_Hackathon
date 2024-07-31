@@ -12,6 +12,10 @@ const NewComplaintDialog = () => {
                 <h2 className="text-lg font-bold mb-4">New Complaint</h2>
                 <form>
                     <div className="mb-4">
+                        <label className="block text-sm font-medium text-gray-700">Email</label>
+                        <input className="mt-1 block w-full p-2 border rounded-md" rows="4" type='email'></input>
+                    </div>
+                    <div className="mb-4">
                         <label className="block text-sm font-medium text-gray-700">Complaint Details</label>
                         <textarea className="mt-1 block w-full p-2 border rounded-md" rows="4"></textarea>
                     </div>

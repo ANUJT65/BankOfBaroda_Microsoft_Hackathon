@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import ApplicationDetailsTable from './ApplicationDetailsTable';
 import DataChat from './DataChat';
+import MLScore from './MLScore';
 
 const SingleApplicationGrid = () => {
   const { applicationId } = useParams();
@@ -112,10 +113,7 @@ const SingleApplicationGrid = () => {
 
         <div className='bg-white mt-2 flex flex-col p-5'>
           <div className='font-bold text-xl'>Application</div>
-          <div className='mt-10 bg-gradient-to-r from-[#008000] to-[#49A402] rounded flex flex-col p-5'>
-            <div className='text-white text-sm'>Azure ML Prediction</div>
-            <div className='text-white text-4xl font-bold'>{applicationData.result}</div>
-          </div>
+          <MLScore azure_ml_score={2}/>
           <div className='mt-5 flex flex-col'>
             <div>Attached Documents</div>
             <div className='flex justify-start'>

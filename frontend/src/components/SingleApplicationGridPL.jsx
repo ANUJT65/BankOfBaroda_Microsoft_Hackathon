@@ -11,6 +11,7 @@ const SingleApplicationGrid = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   console.log(applicationId);
+  const justification = "Yeh good hai. aisa kyun hai? mujhe nahi pata.";
 
   useEffect(() => {
     axios.get(`https://bobcyberwardenfinal.azurewebsites.net/personalloan/get_data_from_applicationid/${applicationId}`)
@@ -104,7 +105,7 @@ const SingleApplicationGrid = () => {
               <div className='text-[#666666]'>Application Id : {applicationData.Application_id}</div>
 
             </div>
-            <div className={`p-3 font-bold rounded ${applicationData.Status === 'rejected' ? 'bg-[#FF0000]' : applicationData.Status === 'accepted' ? 'bg-[#008000]' : 'bg-[#E3DA00]'}`}>
+            <div className={`p-3 font-bold text-white rounded ${applicationData.Status === 'rejected' ? 'bg-[#FF0000]' : applicationData.Status === 'accepted' ? 'bg-[#008000]' : 'bg-[#E3DA00]'}`}>
               Status: {applicationData.Status}
             </div>
           </div>
@@ -115,6 +116,7 @@ const SingleApplicationGrid = () => {
           <div className='mt-10 bg-gradient-to-r from-[#008000] to-[#49A402] rounded flex flex-col p-5'>
             <div className='text-white text-sm'>Azure ML Prediction</div>
             <div className='text-white text-4xl font-bold'>{applicationData.Result}</div>
+            <div className='text-white text-xl mt-2'>{justification}</div>
           </div>
           <div className='mt-5 flex flex-col'>
             <div>Attached Documents</div>

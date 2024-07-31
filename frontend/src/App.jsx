@@ -19,6 +19,7 @@ import BankDash2 from './pages/BankDash2';
 import SingleApplicationPL from './pages/SinglePageApplicationPL';
 import Login3 from './pages/Login3';
 import NewHome from './pages/NewHome';
+import BankMails2 from './pages/BankMails2';
 
 const App = () => {
   return (
@@ -31,7 +32,7 @@ const App = () => {
           <Route path="/login2" element={<Login2 />} />
           <Route path="/application" element={<Application />} />
           <Route path="/bankdashboard" element={<BankDashboard />} />
-          <Route path="/bankmails" element={<BankMails />} />
+          <Route path="/bankmails" element={<BankMails2 />} />
           <Route path="/datachat" element={<DataChat />} />
           <Route path="/newcustdb" element={<CustDash2 />} />
           <Route path="/dashboardPL" element={<DashboardPL />} />
