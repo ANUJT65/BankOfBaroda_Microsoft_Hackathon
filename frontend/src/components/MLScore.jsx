@@ -41,7 +41,7 @@ const MLScore = ({ azure_ml_score, data_of_post_request }) => {
     const fetchResult = async () => {
       try {
         console.log('Sending POST request with data:', data_of_post_request); // Debugging log
-        const response = await axios.post('http://127.0.0.1:5000/bussinessloan/classify', data_of_post_request);
+        const response = await axios.post('https://bobcyberwardenfinal.azurewebsites.net/bussinessloan/classify', data_of_post_request);
         console.log('Received response:', response.data); // Debugging log
         setResult({
           outcome: response.data.outcome,

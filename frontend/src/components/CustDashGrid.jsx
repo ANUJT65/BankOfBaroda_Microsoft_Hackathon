@@ -1,20 +1,36 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import ClusteredBarChart from './ClusteredBarChart';
 import NewApplicationMenu from './NewApplicationMenu';
 import { UserCategoryContext } from '../contexts/UserCategoryContext';
 import NewComplaintButton from './NewComplaintButton';
 import Table from './Table';
 import NewComplaintDialog from './NewComplaintDialog';
-
+import EmailTable from './EmailTable';
+import axios from 'axios';
+import TableCust from './TableCust';
 const CustDashGrid = () => {
   const { userCategory, setUserCategory } = useContext(UserCategoryContext);
+  const [complaints, setComplaints] = useState([]);
+  
   const activeStyle = 'text-left px-4 font-bold py-3 mt-3 bg-black text-white rounded-md';
   const inactiveStyle = 'bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md';
 
   const ah = ['Application Type', 'Application ID', 'Date', 'Status'];
-  const ch = [''];
-  const applications = [];
-  const complaints = [];
+  const ch = ['Application ID', 'Category', 'Classification Date', 'Email Content', 'Email ID', 'Reply Message', 'Status', 'User ID'];
+
+  // Function to fetch complaints data
+  const fetchComplaints = async () => {
+    try {
+      const response = await axios.get('http://127.0.0.1:5000/emailclassify/email_by_userid');
+      setComplaints(response.data);
+    } catch (error) {
+      console.error('Error fetching complaints data', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchComplaints();
+  }, []);
 
   return (
     <div className='grid grid-cols-12 gap-3 mx-10 mt-2'>
@@ -50,8 +66,8 @@ const CustDashGrid = () => {
           {userCategory === 'Applications' ? <NewApplicationMenu /> : <NewComplaintButton />}
         </div>
         <div className='text-[#666666]'>Keep track of your bank {userCategory} here</div>
-        {userCategory === 'Applications' && <Table header={ah} content={applications} />}
-        {userCategory === 'Complaints' && <Table header={ch} content={complaints} />}
+        {userCategory === 'Applications' && <TableCust header={ah} content={applications} />}
+        {userCategory === 'Complaints' && <EmailTable header={ch} content={complaints} />}
       </div>
       <NewComplaintDialog />
     </div>
