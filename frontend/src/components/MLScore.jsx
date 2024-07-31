@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 const MLScore = ({ azure_ml_score, data_of_post_request }) => {
   const [result, setResult] = useState({ outcome: '', reasoning: '' }); // State to hold the result from the POST request
   const [loading, setLoading] = useState(true); // State to indicate if the data is still being loaded
