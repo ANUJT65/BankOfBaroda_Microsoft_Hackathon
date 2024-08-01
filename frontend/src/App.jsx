@@ -21,6 +21,7 @@ import Login3 from './pages/Login3';
 import NewHome from './pages/NewHome';
 import BankMails2 from './pages/BankMails2';
 import NewApplicationMenu from './components/NewApplicationMenu';
+import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/singleapplication/:applicationId" element={<SingleApplication />} /> {/* Update this line */}
           <Route path="/newbankdb" element={<BankDash2 />} />
           <Route path="/singleapplicationPL/:applicationId" element={<SingleApplicationPL />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </UserProvider>
