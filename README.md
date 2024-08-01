@@ -186,6 +186,34 @@ The Walter White dashboard integrates various Azure services and machine learnin
 ---
 ## IMPLEMENTATION
 
+- Starting Page 
+ ![image](https://github.com/user-attachments/assets/af778757-8ccc-4836-bdd8-83256492505f)
+# Customer Side Dashboard
+  - Emails
+  ![image](https://github.com/user-attachments/assets/70819147-8366-4352-85d7-96d9b8a8f7df)
+  -Business Loans
+  ![image](https://github.com/user-attachments/assets/cce2b3fb-0ee9-4372-824f-b309b258a7c1)
+  -Personal Loans
+  ![image](https://github.com/user-attachments/assets/9eced0ec-92c9-4c25-a430-39f4527f628f)
+- Email Application
+  ![image](https://github.com/user-attachments/assets/2d6c9c32-f454-4bea-af07-cde420a3c6a9)
+
+- Customer Personal Loan page
+  ![image](https://github.com/user-attachments/assets/37056f68-22ac-4562-b8f4-88ae43362701)
+- Customer Bussiness Loan Page
+  ![image](https://github.com/user-attachments/assets/9334b8d5-bed4-4122-bfcc-9aa034fb64b7)
+# Banker Side
+- Banker Side Dashboard Page
+ ![image](https://github.com/user-attachments/assets/928a3dbf-3556-43fb-a3f7-d7be2f539dae)
+- Banker Side Personal Loan Page
+  ![imageinforuse](https://github.com/user-attachments/assets/e932e270-0155-4282-aead-9b5489cf2eab)
+- Banker Side Bussiness Loan page
+  ![imageinforuse](https://github.com/user-attachments/assets/96e88510-8128-4b37-aa21-ac894d68fe89)
+  ![imageinforuse](https://github.com/user-attachments/assets/65ae833e-6306-498a-be77-870af3b01914)
+- Email Classification
+  ![image](https://github.com/user-attachments/assets/f08fb238-e993-4b70-991a-6349eabe8b2b)
+
+
 ![Wireframe - 1](https://github.com/ANUJT65/bob_hackathon/assets/123918593/cd488880-7d46-4d61-b76a-0967e15898a4)
 
 ## Customer side:
@@ -236,39 +264,6 @@ The Walter White dashboard integrates various Azure services and machine learnin
 ### Frontend
 
 - **React JS:** For building a dynamic and responsive user interface.
-- Starting Page 
- ![image](https://github.com/user-attachments/assets/af778757-8ccc-4836-bdd8-83256492505f)
-- Customer Dashboard
-  ![image](https://github.com/user-attachments/assets/70819147-8366-4352-85d7-96d9b8a8f7df)
-  
-  ![image](https://github.com/user-attachments/assets/cce2b3fb-0ee9-4372-824f-b309b258a7c1)
-  ![image](https://github.com/user-attachments/assets/9eced0ec-92c9-4c25-a430-39f4527f628f)
-- Email Application
-  ![image](https://github.com/user-attachments/assets/2d6c9c32-f454-4bea-af07-cde420a3c6a9)
-- Customer Personal Loan page
-  ![image](https://github.com/user-attachments/assets/37056f68-22ac-4562-b8f4-88ae43362701)
-- Customer Bussiness Loan Page
-  ![image](https://github.com/user-attachments/assets/9334b8d5-bed4-4122-bfcc-9aa034fb64b7)
-- Banker Side Dashboard Page
- ![image](https://github.com/user-attachments/assets/928a3dbf-3556-43fb-a3f7-d7be2f539dae)
-- Banker Side Personal Loan Page
-  ![imageinforuse](https://github.com/user-attachments/assets/e932e270-0155-4282-aead-9b5489cf2eab)
-- Banker Side Bussiness Loan page
-  ![imageinforuse](https://github.com/user-attachments/assets/96e88510-8128-4b37-aa21-ac894d68fe89)
-  ![imageinforuse](https://github.com/user-attachments/assets/65ae833e-6306-498a-be77-870af3b01914)
-- Email Classification
-  ![image](https://github.com/user-attachments/assets/f08fb238-e993-4b70-991a-6349eabe8b2b)
-
-
-
-
-
-
-
-
-
-
-
 
 ### Backend
 - **Flask:** For developing RESTful APIs and handling backend logic and also for integrating azure tools aswell as machine learning and gen ai models.
