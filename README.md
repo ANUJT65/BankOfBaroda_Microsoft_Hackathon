@@ -4,8 +4,10 @@
 
 
 
-- **DEMO VIDEO:**
-[Watch the demo video](https://www.youtube.com/watch?v=g_Ief5Fy4j8)
+## DEMO VIDEO
+
+[![Watch the demo video](https://img.youtube.com/vi/g_Ief5Fy4j8/hqdefault.jpg)](https://www.youtube.com/watch?v=g_Ief5Fy4j8)
+
 
 
 ## Title:  Walter White: Generative AI-Powered Centralized Dashboard for Enhanced Operations and Loan Approvals
