@@ -4,7 +4,7 @@
 
 
 
-## DEMO VIDEO
+## DEMO VIDEO( DO WATCH IN 2X if you want , demo of website is towards the end of the video, all the parameters are explained in start of video)
 
 [![Watch the demo video](https://img.youtube.com/vi/g_Ief5Fy4j8/hqdefault.jpg)](https://www.youtube.com/watch?v=g_Ief5Fy4j8)
 
