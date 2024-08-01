@@ -20,6 +20,7 @@ import SingleApplicationPL from './pages/SinglePageApplicationPL';
 import Login3 from './pages/Login3';
 import NewHome from './pages/NewHome';
 import BankMails2 from './pages/BankMails2';
+import NewApplicationMenu from './components/NewApplicationMenu';
 
 const App = () => {
   return (
