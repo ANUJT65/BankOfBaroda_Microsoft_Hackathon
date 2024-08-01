@@ -3,20 +3,23 @@ import ClusteredBarChart from './ClusteredBarChart';
 import NewApplicationMenu from './NewApplicationMenu';
 import { UserCategoryContext } from '../contexts/UserCategoryContext';
 import NewComplaintButton from './NewComplaintButton';
-import Table from './Table';
 import NewComplaintDialog from './NewComplaintDialog';
 import EmailTable from './EmailTable';
 import axios from 'axios';
-import TableCust from './TableCust';
+import ApplicationTableforcut from './ApplicationTableforcut';
+
 const CustDashGrid = () => {
   const { userCategory, setUserCategory } = useContext(UserCategoryContext);
   const [complaints, setComplaints] = useState([]);
-  
+  const [applications, setApplications] = useState([]);
+  const [personalLoans, setPersonalLoans] = useState([]);
+
   const activeStyle = 'text-left px-4 font-bold py-3 mt-3 bg-black text-white rounded-md';
   const inactiveStyle = 'bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md';
 
-  const ah = ['Application Type', 'Application ID', 'Date', 'Status'];
+  const ah = ['Application ID', 'Company Name', 'Auditing Company', 'Status'];
   const ch = ['Application ID', 'Category', 'Classification Date', 'Email Content', 'Email ID', 'Reply Message', 'Status', 'User ID'];
+  const plh = ['Application ID', 'Name', 'Occupation', 'Status', 'Type of Loan'];
 
   // Function to fetch complaints data
   const fetchComplaints = async () => {
@@ -28,8 +31,45 @@ const CustDashGrid = () => {
     }
   };
 
+  // Function to fetch applications data
+  const fetchApplications = async () => {
+    try {
+      const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/bussinessloan/loanbyuserid/12735');
+      // Extracting only the required fields
+      const filteredApplications = response.data.applications.map(app => ({
+        application_id: app.application_id,
+        company_name: app.company_name,
+        auditing_company_name: app.auditing_company_name,
+        status: app.Status,
+      }));
+      setApplications(filteredApplications);
+    } catch (error) {
+      console.error('Error fetching applications data', error);
+    }
+  };
+
+  // Function to fetch personal loan data
+  const fetchPersonalLoans = async () => {
+    try {
+      const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/personalloan/get_customer_info?Customer_ID=3392');
+      // Extracting only the required fields and matching the structure
+      const filteredPersonalLoans = response.data.map(loan => ({
+        application_id: loan.Application_id,
+        name: loan.Name,
+        occupation: loan.Occupation,
+        status: loan.Status,
+        type_of_loan: loan.Type_of_Loan,
+      }));
+      setPersonalLoans(filteredPersonalLoans);
+    } catch (error) {
+      console.error('Error fetching personal loan data', error);
+    }
+  };
+
   useEffect(() => {
     fetchComplaints();
+    fetchApplications();
+    fetchPersonalLoans(); // Fetch personal loans as well
   }, []);
 
   return (
@@ -56,18 +96,22 @@ const CustDashGrid = () => {
           Complaints
         </button>
         <button className={`${userCategory === 'Applications' ? activeStyle : inactiveStyle}`} onClick={() => setUserCategory('Applications')}>
-          Applications
+          Business Loans
+        </button>
+        <button className={`${userCategory === 'Personal_loans' ? activeStyle : inactiveStyle}`} onClick={() => setUserCategory('Personal_loans')}>
+          Personal Loans
         </button>
       </div>
 
       <div className='bg-white col-span-9 rounded-md flex flex-col p-4'>
         <div className='flex justify-between'>
           <div className='font-bold text-xl'>Your {userCategory}</div>
-          {userCategory === 'Applications' ? <NewApplicationMenu /> : <NewComplaintButton />}
+          {userCategory === 'Applications' || userCategory === 'Personal_loans' ? <NewApplicationMenu /> : <NewComplaintButton />}
         </div>
         <div className='text-[#666666]'>Keep track of your bank {userCategory} here</div>
-        {userCategory === 'Applications' && <TableCust header={ah} content={applications} />}
+        {userCategory === 'Applications' && <ApplicationTableforcut header={ah} content={applications} />}
         {userCategory === 'Complaints' && <EmailTable header={ch} content={complaints} />}
+        {userCategory === 'Personal_loans' && <ApplicationTableforcut header={plh} content={personalLoans} />} {/* Personal Loans table */}
       </div>
       <NewComplaintDialog />
     </div>
