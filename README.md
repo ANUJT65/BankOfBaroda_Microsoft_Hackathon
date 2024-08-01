@@ -241,12 +241,12 @@ The Walter White dashboard integrates various Azure services and machine learnin
   ![image](https://github.com/user-attachments/assets/9334b8d5-bed4-4122-bfcc-9aa034fb64b7)
 - Banker Side Dashboard Page
  ![image](https://github.com/user-attachments/assets/928a3dbf-3556-43fb-a3f7-d7be2f539dae)
-  Banker Side Personal Loan Page
-  ![image](https://github.com/user-attachments/assets/6fe657c5-5131-4084-8ac3-07e613163e6c)
+- Banker Side Personal Loan Page
+  ![imageinforuse](https://github.com/user-attachments/assets/e932e270-0155-4282-aead-9b5489cf2eab)
 - Banker Side Bussiness Loan page
-- ![image](https://github.com/user-attachments/assets/e3e55343-7922-4aff-b8db-7501edeaeb07)
-  Email Classification
-- ![image](https://github.com/user-attachments/assets/f08fb238-e993-4b70-991a-6349eabe8b2b)
+  ![image](https://github.com/user-attachments/assets/e3e55343-7922-4aff-b8db-7501edeaeb07)
+- Email Classification
+  ![image](https://github.com/user-attachments/assets/f08fb238-e993-4b70-991a-6349eabe8b2b)
 
 
 
