@@ -21,7 +21,7 @@ const CustDashGrid = () => {
   // Function to fetch complaints data
   const fetchComplaints = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:5000/emailclassify/email_by_userid');
+      const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/email_by_userid');
       setComplaints(response.data);
     } catch (error) {
       console.error('Error fetching complaints data', error);
