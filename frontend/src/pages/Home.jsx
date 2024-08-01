@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import backgroundImage from '../../public/Baroda_Lvp.jpg'; // Adjust the path as necessary
+import backgroundImage from '../../public/Baroda_Lvp.jpg'; 
 
 const Home = () => {
   return (

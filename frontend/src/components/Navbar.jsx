@@ -1,8 +1,10 @@
 import React, { useContext, useEffect } from 'react';
 import Avatar from '@mui/material/Avatar';
 import { UserContext } from '../contexts/userContext';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const { user, setUser } = useContext(UserContext);
 
   useEffect(() => {
@@ -16,6 +18,10 @@ const Navbar = () => {
         <div className='text-3xl font-bold italic text-white pt-2 pl-2'>
           Walter White
         </div>
+      </div>
+      <div>
+        <button className='bg-black text-white p-2 mx-2 my-2 rounded hover:bg-white hover:text-black' onClick={()=> navigate('/newcustdb')}>Customer Dashboard</button>
+        <button className='bg-black text-white p-2 mx-2 my-2 rounded hover:bg-white hover:text-black' onClick={()=> navigate('/newbankdb')}>Bank Dashboard</button>
       </div>
       <div className='flex'>
         <Avatar sx={{ bgcolor: '#000000' }} className='mt-2 mr-5 bg-black'>

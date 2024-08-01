@@ -77,7 +77,7 @@ const CustDashGrid = () => {
       <div className='bg-white col-span-4 rounded-md p-5 flex flex-col'>
         <div className='font-bold text-xl'>Savings A/C</div>
         <div className='text-[#666666]'>123456789</div>
-        <div className='text-3xl mt-5'>₹ 69,420.00</div>
+        <div className='text-3xl mt-5'>₹ 1,000</div>
         <div className='text-[#666666]'>Available Balance</div>
       </div>
 

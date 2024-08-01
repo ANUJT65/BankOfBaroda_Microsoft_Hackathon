@@ -9,6 +9,7 @@ import BankPie from './BankPie';
 const BankDashGrid = () => {
   const { category, setCategory } = useContext(categoryContext);
   const [applications, setApplications] = useState([]);
+  const [size, setSize] = useState(0); 
   const [emails, setEmails] = useState([
     {
       Sender: 'Bank of America',
@@ -35,6 +36,7 @@ const BankDashGrid = () => {
             'Azure ML Score': application.Result,
           }));
           setApplications(fetchedApplications);
+          setSize(fetchedApplications.length); // Update size state
         })
         .catch(error => {
           console.error('Error fetching applications:', error);
@@ -48,9 +50,9 @@ const BankDashGrid = () => {
             'Auditing Company Name': loan.auditing_company_name,
             "Date And Time" : loan.created_at,
             'ML Score': loan.result
-            
           }));
           setBusinessLoans(fetchedBusinessLoans);
+          setSize(fetchedBusinessLoans.length); // Update size state
         })
         .catch(error => {
           console.error('Error fetching business loans:', error);
@@ -58,7 +60,9 @@ const BankDashGrid = () => {
     }
   }, [category]);
 
-  const size = applications.length;
+
+  
+  
 
   return (
     <div className='grid grid-cols-12 gap-3 mx-10 mt-2'>
