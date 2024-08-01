@@ -4,7 +4,8 @@
 
 
 
-## DEMO VIDEO( Do watch in 2X if you want , demo of website is towards the end of the video, all the parameters are explained in start of video, we hope you like our project)
+## DEMO VIDEO
+(Do watch in 2X if you want, demo of the website is towards the end of the video, all the parameters are explained at the start of the video. We hope you like our project)
 
 [![Watch the demo video](https://img.youtube.com/vi/g_Ief5Fy4j8/hqdefault.jpg)](https://www.youtube.com/watch?v=g_Ief5Fy4j8)
 
@@ -24,7 +25,7 @@
 | Section                              |
 |--------------------------------------|
 | [Bank Of Baroda Hackathon](#bank-of-baroda-hackathon)         |
-| [DEMO VIDEO](#demo-video)         |
+| [DEMO VIDEO](#demo-video)           |
 | [Problem Statement](#problem-statement)                       |
 | [Prerequisites for Understanding the Project](#prerequisites-for-understanding-the-project) |
 | [Methodology](#methodology)                                   |
