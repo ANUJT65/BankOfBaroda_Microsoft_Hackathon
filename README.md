@@ -217,10 +217,10 @@ The Walter White dashboard integrates various Azure services and machine learnin
   ![imageinforuse](https://github.com/user-attachments/assets/65ae833e-6306-498a-be77-870af3b01914)
 - Email Classification
   ![image](https://github.com/user-attachments/assets/f08fb238-e993-4b70-991a-6349eabe8b2b)
+- ![Wireframe - 1](https://github.com/ANUJT65/bob_hackathon/assets/123918593/cd488880-7d46-4d61-b76a-0967e15898a4)
 
 
-![Wireframe - 1](https://github.com/ANUJT65/bob_hackathon/assets/123918593/cd488880-7d46-4d61-b76a-0967e15898a4)
-
+## PREVIOUS VERSION OF FRONTEND
 ## Customer side:
 ## Desc of below image:
 - As you can see in image, customers just have to attach their financial documents and azure ocr will do the work for them of filling the forms aswell as form recognition .
