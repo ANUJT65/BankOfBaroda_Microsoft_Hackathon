@@ -263,6 +263,7 @@ The Walter White dashboard integrates various Azure services and machine learnin
 ### Backend
 - **Flask:** For developing RESTful APIs and handling backend logic and also for integrating azure tools aswell as machine learning and gen ai models.
 - Repo Link : https://github.com/Suraj-Chavan1/Bob_final
+- Microsoft Azure Server Link : https://bobcyberwardenfinal.azurewebsites.net/
 
 ### Machine Learning and AI
 - **Azure Machine Learning:** For building and deploying machine learning models.
