@@ -12,6 +12,9 @@ IF YOU WANT TO SEE IMAGES  YOU COULD GO TO #IMPLEMENTATION FROM THE TABLE OF CON
 
 https://www.youtube.com/watch?v=g_Ief5Fy4j8
 
+## PPT LINK:
+https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view
+[Download the PPT Presentation](https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view)
 
 
 ## Title:  Walter White: Generative AI-Powered Centralized Dashboard for Enhanced Operations and Loan Approvals
