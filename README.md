@@ -234,11 +234,13 @@ The Walter White dashboard integrates various Azure services and machine learnin
 ![tech_stack_updated](https://github.com/ANUJT65/bob_hackathon/assets/123918593/f9725c06-b448-4397-8328-5a23219e7bf9)
 
 ### Frontend
+
 - **React JS:** For building a dynamic and responsive user interface.
 - Starting Page 
  ![image](https://github.com/user-attachments/assets/af778757-8ccc-4836-bdd8-83256492505f)
 - Customer Dashboard
   ![image](https://github.com/user-attachments/assets/70819147-8366-4352-85d7-96d9b8a8f7df)
+  
   ![image](https://github.com/user-attachments/assets/cce2b3fb-0ee9-4372-824f-b309b258a7c1)
   ![image](https://github.com/user-attachments/assets/9eced0ec-92c9-4c25-a430-39f4527f628f)
 - Email Application
