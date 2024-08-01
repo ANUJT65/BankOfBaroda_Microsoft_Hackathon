@@ -24,6 +24,7 @@
 | Section                              |
 |--------------------------------------|
 | [Bank Of Baroda Hackathon](#bank-of-baroda-hackathon)         |
+| [DEMO VIDEO](#demo-video)         |
 | [Problem Statement](#problem-statement)                       |
 | [Prerequisites for Understanding the Project](#prerequisites-for-understanding-the-project) |
 | [Methodology](#methodology)                                   |
