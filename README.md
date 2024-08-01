@@ -6,9 +6,11 @@
 
 ## DEMO VIDEO
 (Do watch in 2X if you want, demo of the website is towards the end of the video, all the parameters are explained at the start of the video. We hope you like our project)
-IF YOU WANT TO SEE IMAGES  YOU COULD GO TO #IMPLEMENTATION from table of contents or watch the video
+IF YOU WANT TO SEE IMAGES  YOU COULD GO TO #IMPLEMENTATION FROM THE TABLE OF CONTENTS OR WATCH THE VIDEO
 
 [![Watch the demo video](https://img.youtube.com/vi/g_Ief5Fy4j8/hqdefault.jpg)](https://www.youtube.com/watch?v=g_Ief5Fy4j8)
+
+https://www.youtube.com/watch?v=g_Ief5Fy4j8
 
 
 
