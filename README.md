@@ -227,6 +227,37 @@ The Walter White dashboard integrates various Azure services and machine learnin
 
 ### Frontend
 - **React JS:** For building a dynamic and responsive user interface.
+- Starting Page 
+- ![image](https://github.com/user-attachments/assets/af778757-8ccc-4836-bdd8-83256492505f)
+- Customer Dashboard
+- ![image](https://github.com/user-attachments/assets/70819147-8366-4352-85d7-96d9b8a8f7df)
+- ![image](https://github.com/user-attachments/assets/cce2b3fb-0ee9-4372-824f-b309b258a7c1)
+- ![image](https://github.com/user-attachments/assets/9eced0ec-92c9-4c25-a430-39f4527f628f)
+- Email Application
+- ![image](https://github.com/user-attachments/assets/2d6c9c32-f454-4bea-af07-cde420a3c6a9)
+- Customer Personal Loan page
+- ![image](https://github.com/user-attachments/assets/37056f68-22ac-4562-b8f4-88ae43362701)
+- Customer Bussiness Loan Page
+- ![image](https://github.com/user-attachments/assets/9334b8d5-bed4-4122-bfcc-9aa034fb64b7)
+- Banker Side Dashboard Page
+- ![image](https://github.com/user-attachments/assets/928a3dbf-3556-43fb-a3f7-d7be2f539dae)
+- Banker Side Personal Loan Page
+- ![image](https://github.com/user-attachments/assets/6fe657c5-5131-4084-8ac3-07e613163e6c)
+- Banker Side Bussiness Loan page
+- ![image](https://github.com/user-attachments/assets/e3e55343-7922-4aff-b8db-7501edeaeb07)
+- Email Classification
+- ![image](https://github.com/user-attachments/assets/f08fb238-e993-4b70-991a-6349eabe8b2b)
+
+
+
+
+
+
+
+
+
+
+
 
 ### Backend
 - **Flask:** For developing RESTful APIs and handling backend logic and also for integrating azure tools aswell as machine learning and gen ai models.
