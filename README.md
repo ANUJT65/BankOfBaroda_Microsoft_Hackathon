@@ -190,6 +190,7 @@ The Walter White dashboard integrates various Azure services and machine learnin
 #############
 ---
 ## IMPLEMENTATION
+## PRESENT VERSION OF PROJECT
 
 - Starting Page 
  ![image](https://github.com/user-attachments/assets/af778757-8ccc-4836-bdd8-83256492505f)
@@ -220,7 +221,7 @@ The Walter White dashboard integrates various Azure services and machine learnin
 - ![Wireframe - 1](https://github.com/ANUJT65/bob_hackathon/assets/123918593/cd488880-7d46-4d61-b76a-0967e15898a4)
 
 
-## PREVIOUS VERSION OF FRONTEND
+## PREVIOUS VERSION OF FRONTEND below
 ## Customer side:
 ## Desc of below image:
 - As you can see in image, customers just have to attach their financial documents and azure ocr will do the work for them of filling the forms aswell as form recognition .
