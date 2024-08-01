@@ -220,6 +220,12 @@ The Walter White dashboard integrates various Azure services and machine learnin
   ![image](https://github.com/user-attachments/assets/f08fb238-e993-4b70-991a-6349eabe8b2b)
 - ![Wireframe - 1](https://github.com/ANUJT65/bob_hackathon/assets/123918593/cd488880-7d46-4d61-b76a-0967e15898a4)
 
+- ## Description:
+- We tried to make the login process for customers as easy as possible through otp but didnt compromise on security, which you will see as follows:
+![Wireframe - 8](https://github.com/ANUJT65/bob_hackathon/assets/123918593/c1e4bbd8-6c22-4929-a2d2-4712aac779f2)
+![Wireframe - 9](https://github.com/ANUJT65/bob_hackathon/assets/123918593/38f0b253-e3a3-458e-b6fd-79aaf58aa874)
+
+
 
 ## PREVIOUS VERSION OF FRONTEND below
 ## Customer side:
@@ -234,6 +240,7 @@ The Walter White dashboard integrates various Azure services and machine learnin
 -  Here you could see attachments necessary for businesses / customers which are all stored in bank database with automated calculations(specially balance sheets) 
     ensuring that customers dont have to deal with these.
 ![Wireframe - 5](https://github.com/ANUJT65/bob_hackathon/assets/123918593/e5dfce72-5e7a-4970-8332-23e37c652210)
+
 
 
 
@@ -256,11 +263,6 @@ The Walter White dashboard integrates various Azure services and machine learnin
 ![Wireframe - 4](https://github.com/ANUJT65/bob_hackathon/assets/123918593/df72e034-e677-4f6d-862c-0b1d517d690f)
 
 - 
-### Easy Login:
-## Description:
-- We tried to make the login process for customers as easy as possible through otp but didnt compromise on security, which you will see as follows:
-![Wireframe - 8](https://github.com/ANUJT65/bob_hackathon/assets/123918593/c1e4bbd8-6c22-4929-a2d2-4712aac779f2)
-![Wireframe - 9](https://github.com/ANUJT65/bob_hackathon/assets/123918593/38f0b253-e3a3-458e-b6fd-79aaf58aa874)
 
 
 ---
