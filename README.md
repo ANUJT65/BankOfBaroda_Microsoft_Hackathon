@@ -16,10 +16,10 @@ https://www.youtube.com/watch?v=g_Ief5Fy4j8
 - https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view
 - [Download the PPT Presentation](https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view)
 
-## WEBSITE LINK:
+## WEBSITE LINK:[RECOMMENDED TO GO THROUGH FRONTEND]
 - Frontend will be hosted on azure app services, temporarily hosted on vercel with all working models:
 - https://bob-hackathon-sigma.vercel.app/
-- Backend hosted on azure app services:
+- Backend hosted on azure app services[FLASK]:
 - https://bobcyberwardenfinal.azurewebsites.net
 
 
