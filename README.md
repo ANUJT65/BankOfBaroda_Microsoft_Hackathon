@@ -16,6 +16,12 @@ https://www.youtube.com/watch?v=g_Ief5Fy4j8
 - https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view
 - [Download the PPT Presentation](https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view)
 
+## WEBSITE LINK:
+- Frontend will be hosted on azure app services, temporarily hosted on vercel with all working models:
+- https://bob-hackathon-sigma.vercel.app/
+- Backend hosted on azure app services:
+- https://bobcyberwardenfinal.azurewebsites.net
+
 
 ## Title:  Walter White: Generative AI-Powered Centralized Dashboard for Enhanced Operations and Loan Approvals
  **Team Cyber Wardens**  
