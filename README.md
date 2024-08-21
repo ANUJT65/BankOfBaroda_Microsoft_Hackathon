@@ -112,8 +112,11 @@ The Walter White dashboard integrates various Azure services and machine learnin
 - **Please be free to click  image (open in new tab) and follow the numbers given in diagram  and methodology simultaneously**
 - **Please be free to click  image (open in new tab) and follow the numbers given in diagram  and methodology simultaneously**
 
-
+## BEFORE INTEGRATEION OF ACCOUNT AGGREGATOR DATABASE
 ![bobdiagram-Page-1 drawio (3)](https://github.com/ANUJT65/bob_hackathon/assets/123918593/1fbaae4d-004a-4190-bc64-5a3606f7c41b)
+
+## AFTER INTEGRATION OF ACCOUNT AGGREGATOR DATABASE
+![WhatsApp Image 2024-08-21 at 7 03 09 PM](https://github.com/user-attachments/assets/fa24f57a-daba-44ee-aaf4-8341ffb94a47)
 
 
 
