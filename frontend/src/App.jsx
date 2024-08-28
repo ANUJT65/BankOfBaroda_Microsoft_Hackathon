@@ -22,6 +22,7 @@ import NewHome from './pages/NewHome';
 import BankMails2 from './pages/BankMails2';
 import NewApplicationMenu from './components/NewApplicationMenu';
 import PageNotFound from './pages/PageNotFound';
+import Emails from './pages/Emails';
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/newbankdb" element={<BankDash2 />} />
           <Route path="/singleapplicationPL/:applicationId" element={<SingleApplicationPL />} />
           <Route path="*" element={<PageNotFound />} />
+          <Route path="/emails" element={<Emails />} />
         </Routes>
       </BrowserRouter>
     </UserProvider>
