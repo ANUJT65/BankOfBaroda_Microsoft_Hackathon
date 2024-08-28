@@ -23,6 +23,7 @@ import BankMails2 from './pages/BankMails2';
 import NewApplicationMenu from './components/NewApplicationMenu';
 import PageNotFound from './pages/PageNotFound';
 import Emails from './pages/Emails';
+import EmailMarketing from './pages/EmailMarketing';
 
 const App = () => {
   return (
@@ -44,6 +45,8 @@ const App = () => {
           <Route path="/singleapplicationPL/:applicationId" element={<SingleApplicationPL />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="/emails" element={<Emails />} />
+          <Route path="/emailmarketing" element={<EmailMarketing />} />
+          
         </Routes>
       </BrowserRouter>
     </UserProvider>
