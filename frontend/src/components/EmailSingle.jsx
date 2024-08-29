@@ -2,25 +2,24 @@ import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import EmailChat from './EmailChat';
 import EmailReply from './EmailReply';
-import { MailContext } from '../contexts/MailContext'; // Ensure this matches your file path and naming
+import { MailContext } from '../contexts/MailContext';
 
 const EmailSingle = () => {
     const { singlemail, setEmail } = useContext(MailContext);
     const [mailContent, setMailContent] = useState(singlemail.ai_generated_response || '');
+    const [newMailContent, setNewMailContent] = useState('');
+    const [context, setContext] = useState('make it more personal');
 
     useEffect(() => {
-        // Define the function to fetch email data by application_id
         const fetchEmailData = async () => {
             try {
-                // Make an Axios GET request to your API endpoint
                 const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/email_by_applicationid', {
                     params: { application_id: singlemail.application_id }
                 });
 
-                // Update the context with the fetched data
                 if (response.data && response.data.length > 0) {
-                    setEmail(response.data[0]); // Assuming response.data is an array of email objects
-                    setMailContent(response.data[0].ai_generated_response || ''); // Update the state with fetched content
+                    setEmail(response.data[0]);
+                    setMailContent(response.data[0].ai_generated_response || '');
                 } else {
                     console.log('No data found for this application ID.');
                 }
@@ -29,12 +28,33 @@ const EmailSingle = () => {
             }
         };
 
-        // Call the function if application_id is present
-
+        if (singlemail.application_id) {
+            fetchEmailData();
+        }
     }, [singlemail.application_id, setEmail]);
 
-    const handleChange = (event) => {
-        setMailContent(event.target.value); // Handle changes to the input field
+    const handleMailContentChange = (event) => {
+        setMailContent(event.target.value);
+    };
+
+    const handleNewMailContentChange = (event) => {
+        setNewMailContent(event.target.value);
+    };
+
+    const handleRegenerateContent = async () => {
+        try {
+            const response = await axios.post('http://127.0.0.1:5000/emailclassify/regenerate-response', {
+                email_content: newMailContent,
+                context: context,
+            });
+
+            if (response.data && response.data.response) {
+                // Update mailContent with the data from the POST request
+                setMailContent(response.data.response || '');
+            }
+        } catch (error) {
+            console.error('Error regenerating email content:', error);
+        }
     };
 
     return (
@@ -50,18 +70,35 @@ const EmailSingle = () => {
                 </div>
             </div>
             <EmailChat />
-            <EmailReply  /> {/* Pass the replyContent prop to EmailReply */}
+            <EmailReply replyContent={mailContent} /> {/* Pass the updated mailContent as a prop */}
 
-            <div className='flex flex-col w-full px-4'>
-    <textarea 
-        className='border border-gray-600 p-2 w-full resize-none' 
-        value={singlemail.ai_generated_response} // Use value with onChange handler for editable field
-        onChange={handleChange} // Add onChange handler to make the field editable
-        rows={9} // Set initial rows
-    />
+            {/* New Textarea and Button for Regenerating Email Content */}
+            <div className='flex flex-col w-full px-4 mt-4'>
+                <textarea
+                    className='border border-gray-600 p-2 w-full resize-none'
+                    value={newMailContent}
+                    onChange={handleNewMailContentChange}
+                    rows={6}
+                    placeholder='Type here to regenerate email content...'
+                />
+                <button
+                    className='p-2 bg-blue-500 text-white mt-2'
+                    onClick={handleRegenerateContent}
+                >
+                    Regenerate Email Content
+                </button>
+            </div>
 
-    <button className='p-2 bg-orange-500 text-white mt-2'>Send</button>
-</div>
+            {/* Existing Textarea for Main Email Content */}
+            <div className='flex flex-col w-full px-4 mt-4'>
+                <textarea
+                    className='border border-gray-600 p-2 w-full resize-none'
+                    value={mailContent}
+                    onChange={handleMailContentChange}
+                    rows={9}
+                />
+                <button className='p-2 bg-orange-500 text-white mt-2'>Send</button>
+            </div>
         </div>
     );
 };
