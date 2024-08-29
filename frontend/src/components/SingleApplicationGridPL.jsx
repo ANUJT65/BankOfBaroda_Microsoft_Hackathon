@@ -11,7 +11,7 @@ const SingleApplicationGrid = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   console.log(applicationId);
-  //const justification = "Yeh good hai. aisa kyun hai? mujhe nahi pata.";
+  const justification = "";
 
   useEffect(() => {
     axios.get(`https://bobcyberwardenfinal.azurewebsites.net/personalloan/get_data_from_applicationid/${applicationId}`)
