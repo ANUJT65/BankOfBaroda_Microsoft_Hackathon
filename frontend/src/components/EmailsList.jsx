@@ -40,6 +40,9 @@ const EmailsList = () => {
                     email={email.email_id}
                     ai_generated_response={email.ai_generated_response}
                     reply_message={email.reply_message}
+                    email_content={email.email_content}
+                    catagory={email.catagory}
+                    priority={email.priority}
                 />
                 
             ))}

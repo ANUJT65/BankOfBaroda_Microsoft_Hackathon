@@ -9,34 +9,8 @@ const EmailSingle = () => {
     const [mailContent, setMailContent] = useState(singlemail.ai_generated_response || '');
     const [replyContent, setReplyContent] = useState(''); 
     const [message, setMessage] = useState(''); 
+    console.log('Single mail:', singlemail);
 
-    useEffect(() => {
-        console.log('useEffect triggered: singlemail.application_id:', singlemail.application_id);
-
-        const fetchEmailData = async () => {
-            try {
-                console.log('Fetching email data for application ID:', singlemail.application_id);
-
-                const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/email_by_applicationid', {
-                    params: { application_id: singlemail.application_id }
-                });
-
-                console.log('Response from fetchEmailData:', response.data);
-
-                if (response.data && response.data.length > 0) {
-                    setEmail(response.data[0]);
-                    setMailContent(response.data[0].ai_generated_response || '');
-                    console.log('Email data set successfully:', response.data[0]);
-                } else {
-                    console.log('No data found for this application ID.');
-                }
-            } catch (error) {
-                console.error('Error fetching email data:', error);
-            }
-        };
-
-
-    }, [singlemail.application_id, setEmail]);
 
     const handleChange = (event) => {
         console.log('Mail content changed:', event.target.value);
@@ -50,15 +24,18 @@ const EmailSingle = () => {
 
     const handleRegenerate = async () => {
         console.log('Regenerate button clicked with reply content:', replyContent);
-
+    
         try {
-            const response = await axios.post('http://127.0.0.1:5000/emailclassify/regenerate-response', {
-                email_content: replyContent, 
-                context: "make it more personal"
+            const response = await axios.post('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/regenerate-response', {
+                email_content: singlemail.email_content, 
+                context: replyContent
             });
-
+            
+            console.log('Mail content:', mailContent); // Corrected logging
+            console.log('Reply content:', replyContent); // Added logging for replyContent
+    
             console.log('Response from handleRegenerate:', response.data);
-
+    
             if (response.status === 200) {
                 setMailContent(response.data.response); 
                 setMessage('Regenerated and updated'); 
@@ -71,11 +48,11 @@ const EmailSingle = () => {
         }
     };
 
-    const handleSend = async () => {
+        const handleSend = async () => {
         console.log('Send button clicked with mail content:', mailContent);
 
         try {
-            const response = await axios.post('http://127.0.0.1:5000/emailclassify/replymessage_by_applicationid', {
+            const response = await axios.post('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/replymessage_by_applicationid', {
                 application_id: singlemail.application_id,
                 reply_message: mailContent
             });
@@ -128,7 +105,7 @@ const EmailSingle = () => {
 
                 <textarea
                     className='border border-gray-600 p-2 w-full resize-none mb-2'
-                    value={mailContent}
+                    value={singlemail.ai_generated_response}
                     onChange={handleChange}
                     rows={9}
                 />

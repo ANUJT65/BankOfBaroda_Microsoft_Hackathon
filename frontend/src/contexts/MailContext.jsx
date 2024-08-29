@@ -14,6 +14,9 @@ export const EmailProvider = ({ children }) => { // Provider name in PascalCase
         application_id: '',
         ai_generated_response: '',
         reply_message: '',
+        email_content: '',
+        catagory : "",
+        priority : "",
     });
 
     return (
