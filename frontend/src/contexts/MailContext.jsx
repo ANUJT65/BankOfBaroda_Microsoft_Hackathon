@@ -10,7 +10,8 @@ export const EmailProvider = ({ children }) => { // Provider name in PascalCase
         title: '',
         preview: '',
         sentiment: '',
-        email: ''
+        email: '',
+        application_id: ''
     });
 
     return (
