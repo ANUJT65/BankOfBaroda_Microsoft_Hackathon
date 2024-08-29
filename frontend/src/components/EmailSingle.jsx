@@ -10,6 +10,10 @@ const EmailSingle = () => {
     const [replyContent, setReplyContent] = useState(''); 
     const [message, setMessage] = useState(''); 
 
+    useEffect(() => {
+        // Update mailContent when singlemail changes
+        setMailContent(singlemail.ai_generated_response || '');
+    }, [singlemail]);
 
     const handleChange = (event) => {
         console.log('Mail content changed:', event.target.value);
@@ -48,7 +52,7 @@ const EmailSingle = () => {
         }
     };
 
-        const handleSend = async () => {
+    const handleSend = async () => {
         console.log('Send button clicked with mail content:', mailContent);
 
         try {
@@ -105,9 +109,10 @@ const EmailSingle = () => {
 
                 <textarea
                     className='border border-gray-600 p-2 w-full resize-none mb-2'
-                    value={singlemail.ai_generated_response}
+                    value={mailContent}
                     onChange={handleChange}
                     rows={9}
+                    placeholder="Edit AI Generated Response"
                 />
                 <button onClick={handleSend} className='p-2 bg-orange-500 text-white mt-2'>
                     Send
