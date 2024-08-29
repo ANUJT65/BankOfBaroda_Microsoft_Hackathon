@@ -39,6 +39,7 @@ const EmailsList = () => {
                     sentiment={email.sentiment}
                     email={email.email_id}
                     ai_generated_response={email.ai_generated_response}
+                    reply_message={email.reply_message}
                 />
                 
             ))}

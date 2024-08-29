@@ -1,11 +1,12 @@
-import React, { useContext, useState } from 'react'
-import EmailSentiment from './EmailSentiment'
+import React, { useContext, useState } from 'react';
+import EmailSentiment from './EmailSentiment';
+import EmailRepliedStatus from './EmailRepliedStatus'; // Ensure this matches your file path and naming
 import { MailContext } from '../contexts/MailContext'; // Ensure this matches your file path and naming
 
-
-const EmailCard = ({senderName, urgency, time, title, preview, sentiment, email,application_id,ai_generated_response}) => {
+const EmailCard = ({ senderName, urgency, time, title, preview, sentiment, email, application_id, ai_generated_response, reply_message }) => {
     const { singlemail, setEmail } = useContext(MailContext); 
     const [isClicked, setIsClicked] = useState(false);
+
     const currentMail = {
         senderName: senderName, 
         urgency: urgency, 
@@ -14,23 +15,23 @@ const EmailCard = ({senderName, urgency, time, title, preview, sentiment, email,
         preview: preview, 
         sentiment: sentiment,
         email: email,
-        application_id:application_id,
-        ai_generated_response:ai_generated_response
-    }
+        application_id: application_id,
+        ai_generated_response: ai_generated_response,
+        reply_message: reply_message,
+    };
 
     const bg = singlemail.email === currentMail.email
-    ? 'hover:shadow-md bg-white'
-    : 'hover:shadow-md bg-gray-200';
+        ? 'hover:shadow-md bg-white'
+        : 'hover:shadow-md bg-gray-200';
 
     const handleClick = () => {
         setEmail(currentMail); // Update with your logic to set the email
         setIsClicked(true); // Set the background color to white on click
     };
 
-    //const { singlemail, setEmail } = useContext(emailContext);
     return (
         <button 
-            className={`${bg}`}
+            className={`${bg} w-full`} // Added 'w-full' for consistent button width
             onClick={handleClick}
         >
             <div className='flex flex-col p-4'>
@@ -44,16 +45,15 @@ const EmailCard = ({senderName, urgency, time, title, preview, sentiment, email,
                 
                 <div className='text-left'>
                     <div className='text-small mt-2'>{title}</div>
-                        <div className='text-small mt-2 text-gray-500'>{preview}
-                    </div>
+                    <div className='text-small mt-2 text-gray-500'>{preview}</div>
                 </div>
+                
                 <EmailSentiment sentiment={sentiment} />
+                <EmailRepliedStatus replied={reply_message} />
             </div>
             <hr className='border-black'></hr>
         </button>
-
-        
-  )
+    );
 }
 
-export default EmailCard
+export default EmailCard;

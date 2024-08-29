@@ -12,7 +12,8 @@ export const EmailProvider = ({ children }) => { // Provider name in PascalCase
         sentiment: '',
         email: '',
         application_id: '',
-        ai_generated_response: ''
+        ai_generated_response: '',
+        reply_message: '',
     });
 
     return (
