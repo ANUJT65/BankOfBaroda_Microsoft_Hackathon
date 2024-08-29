@@ -20,7 +20,7 @@ const NewComplaintDialog = () => {
     };
 
     try {
-      const response = await axios.post('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/classify_email', requestBody);
+      const response = await axios.post('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/classify_email_to_user', requestBody);
 
       if (response.status === 200) {
         setSubmitted(true); // Set submission status to true
