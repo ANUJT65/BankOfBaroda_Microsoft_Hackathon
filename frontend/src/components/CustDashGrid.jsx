@@ -9,25 +9,34 @@ import axios from 'axios';
 import ApplicationTableforcut from './ApplicationTableforcut';
 
 const CustDashGrid = () => {
-  const { userCategory, setUserCategory } = useContext(UserCategoryContext);
+  const { userCategory } = useContext(UserCategoryContext);
   const [complaints, setComplaints] = useState([]);
   const [applications, setApplications] = useState([]);
   const [personalLoans, setPersonalLoans] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const activeStyle = 'text-left px-4 font-bold py-3 mt-3 bg-black text-white rounded-md';
   const inactiveStyle = 'bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md';
 
   const ah = ['Application ID', 'Company Name', 'Auditing Company', 'Status'];
-  const ch = ['Application ID', 'Category', 'Classification Date', 'Email Content', 'Email ID', 'Reply Message', 'Status', 'User ID'];
+  const ch = ['Application ID', 'Email Content', 'Reply Message', 'User ID'];
   const plh = ['Application ID', 'Name', 'Occupation', 'Status', 'Type of Loan'];
 
   // Function to fetch complaints data
   const fetchComplaints = async () => {
     try {
       const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/email_by_userid');
-      setComplaints(response.data);
+      const filteredComplaints = response.data.map(app => ({
+        application_id: app.application_id,
+        email_content: app.email_content,
+        reply_message: app.reply_message,
+        user_id: app.classification_date, // Assuming there's a User_ID field based on context
+      }));
+      setComplaints(filteredComplaints);
     } catch (error) {
       console.error('Error fetching complaints data', error);
+      setError('Failed to load complaints');
     }
   };
 
@@ -35,7 +44,6 @@ const CustDashGrid = () => {
   const fetchApplications = async () => {
     try {
       const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/bussinessloan/loanbyuserid/12735');
-      // Extracting only the required fields
       const filteredApplications = response.data.applications.map(app => ({
         application_id: app.application_id,
         company_name: app.company_name,
@@ -45,6 +53,7 @@ const CustDashGrid = () => {
       setApplications(filteredApplications);
     } catch (error) {
       console.error('Error fetching applications data', error);
+      setError('Failed to load applications');
     }
   };
 
@@ -52,7 +61,6 @@ const CustDashGrid = () => {
   const fetchPersonalLoans = async () => {
     try {
       const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/personalloan/get_customer_info?Customer_ID=3392');
-      // Extracting only the required fields and matching the structure
       const filteredPersonalLoans = response.data.map(loan => ({
         application_id: loan.Application_id,
         name: loan.Name,
@@ -63,14 +71,31 @@ const CustDashGrid = () => {
       setPersonalLoans(filteredPersonalLoans);
     } catch (error) {
       console.error('Error fetching personal loan data', error);
+      setError('Failed to load personal loans');
     }
   };
 
   useEffect(() => {
-    fetchComplaints();
-    fetchApplications();
-    fetchPersonalLoans(); // Fetch personal loans as well
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        await fetchComplaints();
+        await fetchApplications();
+        await fetchPersonalLoans();
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
   }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <div className='grid grid-cols-12 gap-3 mx-10 mt-2'>
@@ -111,7 +136,7 @@ const CustDashGrid = () => {
         <div className='text-[#666666]'>Keep track of your bank {userCategory} here</div>
         {userCategory === 'Applications' && <ApplicationTableforcut header={ah} content={applications} />}
         {userCategory === 'Complaints' && <EmailTable header={ch} content={complaints} />}
-        {userCategory === 'Personal_loans' && <ApplicationTableforcut header={plh} content={personalLoans} />} {/* Personal Loans table */}
+        {userCategory === 'Personal_loans' && <ApplicationTableforcut header={plh} content={personalLoans} />}
       </div>
       <NewComplaintDialog />
     </div>
