@@ -9,7 +9,7 @@ const EmailsList = () => {
 
     useEffect(() => {
         // Fetch emails from backend when the component mounts
-        axios.get('http://127.0.0.1:5000/emailclassify/get_all_emails')
+        axios.get('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/get_all_emails')
             .then(response => {
                 // Assuming the response is in the correct format as provided in your sample
                 setEmails(response.data);
@@ -38,6 +38,7 @@ const EmailsList = () => {
                     preview={email.email_content} // Using email content as preview
                     sentiment={email.sentiment}
                     email={email.email_id}
+                    ai_generated_response={email.ai_generated_response}
                 />
                 
             ))}

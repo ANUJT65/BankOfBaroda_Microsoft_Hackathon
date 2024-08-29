@@ -3,7 +3,7 @@ import EmailSentiment from './EmailSentiment'
 import { MailContext } from '../contexts/MailContext'; // Ensure this matches your file path and naming
 
 
-const EmailCard = ({senderName, urgency, time, title, preview, sentiment, email,application_id}) => {
+const EmailCard = ({senderName, urgency, time, title, preview, sentiment, email,application_id,ai_generated_response}) => {
     const { singlemail, setEmail } = useContext(MailContext); 
     const [isClicked, setIsClicked] = useState(false);
     const currentMail = {
@@ -14,7 +14,8 @@ const EmailCard = ({senderName, urgency, time, title, preview, sentiment, email,
         preview: preview, 
         sentiment: sentiment,
         email: email,
-        application_id:application_id
+        application_id:application_id,
+        ai_generated_response:ai_generated_response
     }
 
     const bg = singlemail.email === currentMail.email
