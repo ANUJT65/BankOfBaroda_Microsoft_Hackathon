@@ -86,7 +86,8 @@ const SingleApplicationGrid = () => {
         >
           Dashboard
         </button>
-        <button className='bg-black text-white px-2 py-2 rounded-md w-full mb-2 text-left hover:bg-gray-200 hover:text-black hover:font-bold' onClick={() => navigate('/emails')}>Automated Response</button>
+        <button className='bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md' onClick={() => navigate('/emailmarketing')}>AI Advertisement</button>
+
 
         <div className='mt-10'>
           <div className='font-bold text-xl'>Reputation Check</div>
