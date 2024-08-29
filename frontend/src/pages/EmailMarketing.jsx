@@ -16,7 +16,7 @@ const EmailMarketing = () => {
             <div className='col-span-7 bg-gray-200'>
                 <div className='p-4 flex flex-col'>
                     <div className='flex justify-around'>
-                        <input className='w-full border border-gray-400 p-2' placeholder='Enter AI prompt for email campaign'></input>
+                        <input className='w-full border border-gray-400 p-2' placeholder='Enter scheme name'></input>
                         <button className='bg-black text-white px-3 w-1/4'>Generate Campaign</button>
                     </div>
 
