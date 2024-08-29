@@ -9,7 +9,6 @@ const EmailSingle = () => {
     const [mailContent, setMailContent] = useState(singlemail.ai_generated_response || '');
     const [replyContent, setReplyContent] = useState(''); 
     const [message, setMessage] = useState(''); 
-    console.log('Single mail:', singlemail);
 
 
     const handleChange = (event) => {
@@ -35,6 +34,7 @@ const EmailSingle = () => {
             console.log('Reply content:', replyContent); // Added logging for replyContent
     
             console.log('Response from handleRegenerate:', response.data);
+            setEmail({ ...singlemail, ai_generated_response: response.data.response });
     
             if (response.status === 200) {
                 setMailContent(response.data.response); 

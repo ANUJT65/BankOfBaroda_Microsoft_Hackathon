@@ -3,7 +3,7 @@ import EmailSentiment from './EmailSentiment';
 import EmailRepliedStatus from './EmailRepliedStatus'; // Ensure this matches your file path and naming
 import { MailContext } from '../contexts/MailContext'; // Ensure this matches your file path and naming
 
-const EmailCard = ({ senderName, urgency, time, title, preview, sentiment, email, application_id, ai_generated_response, reply_message,email_content,catagory,priority }) => {
+const EmailCard = ({ senderName, urgency, time, title, preview, sentiment, email, application_id, ai_generated_response, reply_message, email_content, category, priority }) => {
     const { singlemail, setEmail } = useContext(MailContext); 
     const [isClicked, setIsClicked] = useState(false);
 
@@ -19,8 +19,8 @@ const EmailCard = ({ senderName, urgency, time, title, preview, sentiment, email
         ai_generated_response: ai_generated_response,
         reply_message: reply_message,
         email_content: email_content,
-        catagory : catagory,
-        priority : priority
+        category: category,
+        priority: priority
     };
 
     const bg = singlemail.email === currentMail.email
@@ -57,6 +57,6 @@ const EmailCard = ({ senderName, urgency, time, title, preview, sentiment, email
             <hr className='border-black'></hr>
         </button>
     );
-}
+};
 
 export default EmailCard;
