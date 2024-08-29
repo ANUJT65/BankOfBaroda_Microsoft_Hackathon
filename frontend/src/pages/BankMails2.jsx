@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import BankerNavbar from '../components/BankerNavbar';
 import EmailsTable from '../components/EmailsTable';
+import { useNavigate } from 'react-router-dom';
 
 const BankMails2 = () => {
   const [category, setCategory] = useState('');
+  const navigate = useNavigate();
 
   const onCategorySelect = async (category) => {
     setCategory(category);
@@ -34,6 +36,7 @@ const BankMails2 = () => {
                 <button className='bg-black text-white px-2 py-2 rounded-md w-full mb-2 text-left hover:bg-gray-200 hover:text-black hover:font-bold' onClick={() => onCategorySelect('get_deposits_and_withdrawals')}>Deposits and Withdrawals</button>
                 <button className='bg-black text-white px-2 py-2 rounded-md w-full mb-2 text-left hover:bg-gray-200 hover:text-black hover:font-bold' onClick={() => onCategorySelect('get_fraud_and_security')}>Fraud and Security</button>
                 <button className='bg-black text-white px-2 py-2 rounded-md w-full mb-2 text-left hover:bg-gray-200 hover:text-black hover:font-bold' onClick={() => onCategorySelect('get_customer_service')}>Customer Service</button>
+                <button className='bg-black text-white px-2 py-2 rounded-md w-full mb-2 text-left hover:bg-gray-200 hover:text-black hover:font-bold' onClick={() => navigate('/emails')}>Automated Response</button>
             </div>
         </div>
         <div className='col-span-7 bg-white mt-3 p-5 rounded'>
