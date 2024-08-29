@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { MailContext } from '../contexts/MailContext'; // Ensure this matches your file path and naming
+import ReactMarkdown from 'react-markdown';
 
 const EmailChat = () => {
   const { singlemail, setEmail } = useContext(MailContext); 
@@ -11,7 +12,7 @@ const EmailChat = () => {
         PG
       </div>
       <div className='bg-gray-100 rounded-lg py-2 px-3 text-left text-black'>
-        {singlemail.preview}
+        <ReactMarkdown>{singlemail.preview}</ReactMarkdown>
       </div>
     </div>
   );
