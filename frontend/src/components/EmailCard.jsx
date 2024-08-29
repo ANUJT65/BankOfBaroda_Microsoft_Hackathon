@@ -48,7 +48,7 @@ const EmailCard = ({ senderName, urgency, time, title, preview, sentiment, email
                 
                 <div className='text-left'>
                     <div className='text-small mt-2'>{title}</div>
-                    <div className='text-small mt-2 text-gray-500'>{preview}</div>
+                    {/*<div className='text-small mt-2 text-gray-500'>{preview}</div>*/}
                 </div>
                 
                 <EmailSentiment sentiment={sentiment} />
