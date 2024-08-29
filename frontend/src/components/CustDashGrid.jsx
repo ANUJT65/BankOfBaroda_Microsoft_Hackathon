@@ -18,14 +18,21 @@ const CustDashGrid = () => {
   const inactiveStyle = 'bg-gray-200 text-left px-4 font-bold text-black py-3 mt-3 hover:bg-black hover:text-white rounded-md';
 
   const ah = ['Application ID', 'Company Name', 'Auditing Company', 'Status'];
-  const ch = ['Application ID', 'Category', 'Classification Date', 'Email Content', 'Email ID', 'Reply Message', 'Status', 'User ID'];
+  const ch = ['Application ID', 'Email Content', 'Reply Message', 'Date And Time'];
   const plh = ['Application ID', 'Name', 'Occupation', 'Status', 'Type of Loan'];
 
   // Function to fetch complaints data
   const fetchComplaints = async () => {
     try {
       const response = await axios.get('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/email_by_userid');
-      setComplaints(response.data);
+      // Extracting only the required fields
+      const filteredComplaints = response.data.map(app => ({
+        application_id: app.application_id,
+        email_content: app.email_content,
+        reply_message: app.reply_message,
+        user_id: app.classification_date, // Assuming classification_date maps to user_id
+      }));
+      setComplaints(filteredComplaints);
     } catch (error) {
       console.error('Error fetching complaints data', error);
     }
