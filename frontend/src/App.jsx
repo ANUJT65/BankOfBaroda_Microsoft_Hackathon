@@ -25,6 +25,7 @@ import PageNotFound from './pages/PageNotFound';
 import Emails from './pages/Emails';
 import EmailMarketing from './pages/EmailMarketing';
 import Datavis from './pages/Datavis';
+import Home2 from './pages/Home2';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home2" element={<Home2 />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login3 />} />
           <Route path="/login2" element={<Login2 />} />
