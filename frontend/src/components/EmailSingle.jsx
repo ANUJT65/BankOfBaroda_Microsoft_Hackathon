@@ -34,7 +34,7 @@ const EmailSingle = () => {
                 context: replyContent
             });
             
-            console.log('Mail content:', mailContent); // Corrected logging
+            console.log('Mail content:', singlemail.email_content); // Corrected logging
             console.log('Reply content:', replyContent); // Added logging for replyContent
     
             console.log('Response from handleRegenerate:', response.data);
@@ -60,6 +60,7 @@ const EmailSingle = () => {
                 application_id: singlemail.application_id,
                 reply_message: mailContent
             });
+            console.log('Mail content:', mailContent); // Corrected logging
 
             console.log('Response from handleSend:', response.data);
 

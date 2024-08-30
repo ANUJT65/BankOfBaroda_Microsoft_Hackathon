@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const EmailMarketingTable = ({ customers }) => {
   const [textAreas, setTextAreas] = useState(
@@ -32,12 +34,15 @@ const EmailMarketingTable = ({ customers }) => {
 
       console.log('Response:', response.data);
 
-      setTextAreas({
-        ...textAreas,
+      setTextAreas(prevTextAreas => ({
+        ...prevTextAreas,
         [customerID]: response.data.email,
-      });
+      }));
+
+      toast.success(`Email generated for ${customer.Name}`);
     } catch (error) {
-      console.error('Error generating email:', error);
+      console.error(`Error generating email for ${customer.Name}:`, error);
+      toast.error(`Failed to generate email for ${customer.Name}`);
     }
   };
 
@@ -45,9 +50,12 @@ const EmailMarketingTable = ({ customers }) => {
     const customer = customers.find(c => c.CustomerID === customerID);
     if (!customer) return;
 
+    const emailData = textAreas[customerID];
+    console.log(`Preparing to send email for ${customer.Name} (${customer.Email})`);
+
     const requestBody = {
-      subject: ` `,
-      body: textAreas[customerID],
+      subject: "Unlock Your Education Potential with Our Student Loan Solutions",
+      body: emailData,
       recipient_email: customer.Email,
     };
 
@@ -59,18 +67,45 @@ const EmailMarketingTable = ({ customers }) => {
       console.log('Send Response:', response.data);
 
       if (response.data.status === 'success') {
-        alert('Email sent successfully!');
+        console.log(`Email sent successfully to ${customer.Name} (${customer.Email})`);
+        toast.success(`Email sent to ${customer.Name}`);
       } else {
-        alert('Failed to send email.');
+        console.log(`Failed to send email to ${customer.Name} (${customer.Email})`);
+        toast.error(`Failed to send email to ${customer.Name}`);
       }
     } catch (error) {
-      console.error('Error sending email:', error);
-      alert('An error occurred while sending the email.');
+      console.error(`Error sending email to ${customer.Name} (${customer.Email}):`, error);
+      toast.error(`Error sending email to ${customer.Name}`);
+    }
+  };
+
+  const handleGenerateAllClick = async () => {
+    try {
+      for (const customer of customers) {
+        await handleGenerateClick(customer.CustomerID);
+      }
+      toast.success('All emails have been generated successfully!');
+    } catch (error) {
+      console.error('Error generating all emails:', error);
+      toast.error('Failed to generate all emails');
+    }
+  };
+
+  const handleSendAllClick = async () => {
+    try {
+      for (const customer of customers) {
+        await handleButtonClick(customer.CustomerID);
+      }
+      toast.success('All emails have been sent successfully!');
+    } catch (error) {
+      console.error('Error sending all emails:', error);
+      toast.error('Failed to send all emails');
     }
   };
 
   return (
     <>
+      <ToastContainer />
       <div className='text-3xl mt-4 mb-2'>Eligible Customers</div>
       {customers.length === 0 ? (
         <div className='text-center mt-4'>No eligible customers found.</div>
@@ -90,22 +125,24 @@ const EmailMarketingTable = ({ customers }) => {
               className='border border-gray-300 p-10 mb-2'
               placeholder='Type your message here...'
             />
-            <div className='flex space-x-2'>
-              <button
-                onClick={() => handleButtonClick(customer.CustomerID)}
-                className='bg-blue-500 text-white px-4 py-2 rounded'
-              >
-                Send
-              </button>
-              <button
-                onClick={() => handleGenerateClick(customer.CustomerID)}
-                className='bg-green-500 text-white px-4 py-2 rounded'
-              >
-                Generate
-              </button>
-            </div>
           </div>
         ))
+      )}
+      {customers.length > 0 && (
+        <div className='flex justify-start space-x-2 mt-4'>
+          <button
+            onClick={handleSendAllClick}
+            className='bg-blue-500 text-white px-4 py-2 rounded'
+          >
+            Send All
+          </button>
+          <button
+            onClick={handleGenerateAllClick}
+            className='bg-green-500 text-white px-4 py-2 rounded'
+          >
+            Generate All
+          </button>
+        </div>
       )}
     </>
   );
