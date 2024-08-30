@@ -1,5 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import EmailChat from './EmailChat';
 import EmailReply from './EmailReply';
 import { MailContext } from '../contexts/MailContext';
@@ -34,8 +36,8 @@ const EmailSingle = () => {
                 context: replyContent
             });
             
-            console.log('Mail content:', singlemail.email_content); // Corrected logging
-            console.log('Reply content:', replyContent); // Added logging for replyContent
+            console.log('Mail content:', singlemail.email_content);
+            console.log('Reply content:', replyContent);
     
             console.log('Response from handleRegenerate:', response.data);
             setEmail({ ...singlemail, ai_generated_response: response.data.response });
@@ -43,45 +45,64 @@ const EmailSingle = () => {
             if (response.status === 200) {
                 setMailContent(response.data.response); 
                 setMessage('Regenerated and updated'); 
+                toast.success('Email content regenerated successfully!');
             } else {
                 setMessage('Failed to regenerate');
+                toast.error('Failed to regenerate email content');
             }
         } catch (error) {
             console.error('Error regenerating email content:', error);
             setMessage('Failed to regenerate');
+            toast.error('Error regenerating email content');
         }
     };
 
     const handleSend = async () => {
-        console.log('Send button clicked with mail content:', mailContent);
-
         try {
+            // First POST request
             const response = await axios.post('https://bobcyberwardenfinal.azurewebsites.net/emailclassify/replymessage_by_applicationid', {
                 application_id: singlemail.application_id,
                 reply_message: mailContent
             });
-            console.log('Mail content:', mailContent); // Corrected logging
-
+            console.log('Mail content:', mailContent);
             console.log('Response from handleSend:', response.data);
 
             if (response.status === 200) {
-                setMessage('Send and saved'); 
+                setMessage('Reply sent and saved'); 
             } else {
-                setMessage('Failed to send');
+                setMessage('Failed to send reply');
+                toast.error('Failed to send reply');
+                return;
+            }
+
+            // Second POST request
+            const emailResponse = await axios.post('https://bobcyberwardenfinal.azurewebsites.net/ads/send_email', {
+                subject: singlemail.title || 'Respond to your query',
+                body: mailContent,
+                recipient_email: 'anujtadkase@gmail.com'
+            });
+
+
+            if (emailResponse.status === 200 && emailResponse.data.status === 'success') {
+                toast.success('Email sent successfully!');
+            } else {
+                setMessage(prevMessage => prevMessage + ' | Failed to send email');
+                toast.error('Failed to send email');
             }
         } catch (error) {
-            console.error('Error sending reply message:', error);
+            console.error('Error sending reply or email:', error);
             setMessage('Failed to send');
+            toast.error('Error sending reply or email');
         }
     };
 
-    // Ensure singlemail data is available before rendering
     if (!singlemail) {
         return <div>Loading...</div>;
     }
 
     return (
         <div className='p-6 flex flex-col'>
+            <ToastContainer /> {/* Add ToastContainer to your component */}
             <div className='text-2xl font-bold'>{singlemail.senderName || 'Sender Name'}</div>
             <div>{singlemail.email || 'Email'}</div>
             <div className='flex justify-center mt-4 text-orange-500 font-bold italic'>{singlemail.title || 'Title'}</div>
@@ -119,7 +140,6 @@ const EmailSingle = () => {
                     Send
                 </button>
 
-                {message && <div className='mt-2 text-green-600'>{message}</div>} 
             </div>
         </div>
     );
