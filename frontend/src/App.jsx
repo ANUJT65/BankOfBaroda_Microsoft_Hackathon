@@ -24,6 +24,7 @@ import NewApplicationMenu from './components/NewApplicationMenu';
 import PageNotFound from './pages/PageNotFound';
 import Emails from './pages/Emails';
 import EmailMarketing from './pages/EmailMarketing';
+import Datavis from './pages/Datavis';
 
 const App = () => {
   return (
@@ -46,7 +47,7 @@ const App = () => {
           <Route path="*" element={<PageNotFound />} />
           <Route path="/emails" element={<Emails />} />
           <Route path="/emailmarketing" element={<EmailMarketing />} />
-          
+          <Route path="/datavis" element={<Datavis />} />
         </Routes>
       </BrowserRouter>
     </UserProvider>
