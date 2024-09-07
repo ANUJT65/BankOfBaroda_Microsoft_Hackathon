@@ -10,7 +10,10 @@ IF YOU WANT TO SEE IMAGES  YOU COULD GO TO #IMPLEMENTATION FROM THE TABLE OF CON
 
 [![Watch the demo video](https://img.youtube.com/vi/g_Ief5Fy4j8/hqdefault.jpg)](https://www.youtube.com/watch?v=g_Ief5Fy4j8)
 
+
 https://www.youtube.com/watch?v=g_Ief5Fy4j8
+
+[![Watch the Finale demo video](https://img.youtube.com/vi/g_Ief5Fy4j8/hqdefault.jpg)](https://www.youtube.com/watch?v=KZLQPJRjeEM)
 
 ## PPT LINK WALTERWHITE PROTOTYPE: Top 100 out of 26k teams
 - https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view
