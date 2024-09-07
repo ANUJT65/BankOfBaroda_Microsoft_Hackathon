@@ -111,6 +111,8 @@ The Walter White dashboard integrates various Azure services and machine learnin
 - **Please be free to click  image (open in new tab) and follow the numbers given in diagram  and methodology simultaneously**
 - **Please be free to click  image (open in new tab) and follow the numbers given in diagram  and methodology simultaneously**
 - **Please be free to click  image (open in new tab) and follow the numbers given in diagram  and methodology simultaneously**
+## USER FLOW:
+![Final Userflow](https://github.com/user-attachments/assets/09a92b6e-8d77-47c7-b212-9c8fae013bcf)
 
 ## BEFORE INTEGRATEION OF ACCOUNT AGGREGATOR DATABASE
 ![bobdiagram-Page-1 drawio (3)](https://github.com/ANUJT65/bob_hackathon/assets/123918593/1fbaae4d-004a-4190-bc64-5a3606f7c41b)
@@ -119,6 +121,8 @@ The Walter White dashboard integrates various Azure services and machine learnin
 
 ![copy_bob_digram-Page-1 drawio (1)](https://github.com/user-attachments/assets/a51d8c8a-ead5-4f91-86bf-b97a4ea76609)
 
+## FINAL ARCHITECTURE WITH INTEGRATION OF CRM
+![copy_bob_digram-Page-1 drawio (5)-Page-1 drawio (1)](https://github.com/user-attachments/assets/cfe33f2d-4529-43a0-9eff-23fa2c54c85f)
 
 
 ### 1. Data Input and Preprocessing
