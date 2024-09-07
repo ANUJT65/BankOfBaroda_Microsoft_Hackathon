@@ -12,10 +12,10 @@ IF YOU WANT TO SEE IMAGES  YOU COULD GO TO #IMPLEMENTATION FROM THE TABLE OF CON
 
 https://www.youtube.com/watch?v=g_Ief5Fy4j8
 
-## PPT LINK: Top 100 out of 26k teams
+## PPT LINK WALTERWHITE PROTOTYPE: Top 100 out of 26k teams
 - https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view
 - [Download the PPT Presentation](https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view)
-## UPDATED PPT LINK: Top 3 out of 26k teams
+## UPDATED PPT LINK WALTER WHITE AS A PRODUCT: Top 3 out of 26k teams
 - https://docs.google.com/presentation/d/1CKrn6wvZTNw0NhKFHQBVYZiXzFUi8bp6NszMDFYgXio/edit?usp=sharing
 
 ## WEBSITE LINK:[RECOMMENDED TO GO THROUGH FRONTEND]
