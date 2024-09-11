@@ -9,7 +9,7 @@
 IF YOU WANT TO SEE IMAGES  YOU COULD GO TO #IMPLEMENTATION FROM THE TABLE OF CONTENTS OR WATCH THE VIDEO
 
 [![Watch the demo video](https://img.youtube.com/vi/g_Ief5Fy4j8/hqdefault.jpg)](https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk)
-[![Watch the Finale demo video]
+## link
 https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk
 
 
