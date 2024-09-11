@@ -208,7 +208,8 @@ The Walter White dashboard integrates various Azure services and machine learnin
 ## IMPLEMENTATION
 ## PRESENT VERSION OF PROJECT
 
-- Starting Page 
+- Starting Page
+ ![Wireframe - 1](https://github.com/ANUJT65/bob_hackathon/assets/123918593/cd488880-7d46-4d61-b76a-0967e15898a4)
  ![image](https://github.com/user-attachments/assets/af778757-8ccc-4836-bdd8-83256492505f)
 # Customer Side Dashboard
   - Emails
@@ -224,31 +225,34 @@ The Walter White dashboard integrates various Azure services and machine learnin
   ![image](https://github.com/user-attachments/assets/37056f68-22ac-4562-b8f4-88ae43362701)
 - Customer Bussiness Loan Page
   ![image](https://github.com/user-attachments/assets/9334b8d5-bed4-4122-bfcc-9aa034fb64b7)
+
+  
 # Banker Side
 - Banker Side Dashboard Page
  ![image](https://github.com/user-attachments/assets/928a3dbf-3556-43fb-a3f7-d7be2f539dae)
+
 - Banker Side Personal Loan Page
   ![imageinforuse](https://github.com/user-attachments/assets/e932e270-0155-4282-aead-9b5489cf2eab)
+  
 - Banker Side Bussiness Loan page
   ![imageinforuse](https://github.com/user-attachments/assets/96e88510-8128-4b37-aa21-ac894d68fe89)
   ![imageinforuse](https://github.com/user-attachments/assets/65ae833e-6306-498a-be77-870af3b01914)
+  
 - Email Classification
   ![image](https://github.com/user-attachments/assets/f08fb238-e993-4b70-991a-6349eabe8b2b)
-- ![Wireframe - 1](https://github.com/ANUJT65/bob_hackathon/assets/123918593/cd488880-7d46-4d61-b76a-0967e15898a4)
+  
 
 - Email Responses using AI:
-- ![aiemailresponses](https://github.com/user-attachments/assets/7875e138-18ba-4064-a56d-4a6f88189aba)
-- Banker Dashboard with datachat and reputation check and resoning generation:
--![banker dashboard](https://github.com/user-attachments/assets/980a009c-4747-463e-acd0-7eb51dd3bf03)
+  ![aiemailresponses](https://github.com/user-attachments/assets/7875e138-18ba-4064-a56d-4a6f88189aba)
+  
 - AI advertisements to eligible customers:
-- ![AIadvertisements](https://github.com/user-attachments/assets/4327e311-4f42-409a-b5c3-fa82d93b5520)
+ ![AIadvertisements](https://github.com/user-attachments/assets/4327e311-4f42-409a-b5c3-fa82d93b5520)
 
 
 - ## Description:
 - We tried to make the login process for customers as easy as possible through otp but didnt compromise on security, which you will see as follows:
 ![Wireframe - 8](https://github.com/ANUJT65/bob_hackathon/assets/123918593/c1e4bbd8-6c22-4929-a2d2-4712aac779f2)
 ![Wireframe - 9](https://github.com/ANUJT65/bob_hackathon/assets/123918593/38f0b253-e3a3-458e-b6fd-79aaf58aa874)
-
 
 
 ## PREVIOUS VERSION OF FRONTEND below
