@@ -9,7 +9,7 @@
 IF YOU WANT TO SEE IMAGES  YOU COULD GO TO #IMPLEMENTATION FROM THE TABLE OF CONTENTS OR WATCH THE VIDEO
 
 
-[![Watch the Finale demo video](https://www.youtube.com/watch?v=7P0Fopk-_jU)
+[![Watch the Finale demo video](https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk)
 
 ## PPT LINK WALTERWHITE PROTOTYPE: Top 100 out of 26k teams
 - https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view
