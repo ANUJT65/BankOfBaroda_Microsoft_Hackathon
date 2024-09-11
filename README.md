@@ -236,6 +236,14 @@ The Walter White dashboard integrates various Azure services and machine learnin
   ![image](https://github.com/user-attachments/assets/f08fb238-e993-4b70-991a-6349eabe8b2b)
 - ![Wireframe - 1](https://github.com/ANUJT65/bob_hackathon/assets/123918593/cd488880-7d46-4d61-b76a-0967e15898a4)
 
+- Email Responses using AI:
+- ![aiemailresponses](https://github.com/user-attachments/assets/7875e138-18ba-4064-a56d-4a6f88189aba)
+- Banker Dashboard with datachat and reputation check and resoning generation:
+-![banker dashboard](https://github.com/user-attachments/assets/980a009c-4747-463e-acd0-7eb51dd3bf03)
+- AI advertisements to eligible customers:
+- ![AIadvertisements](https://github.com/user-attachments/assets/4327e311-4f42-409a-b5c3-fa82d93b5520)
+
+
 - ## Description:
 - We tried to make the login process for customers as easy as possible through otp but didnt compromise on security, which you will see as follows:
 ![Wireframe - 8](https://github.com/ANUJT65/bob_hackathon/assets/123918593/c1e4bbd8-6c22-4929-a2d2-4712aac779f2)
