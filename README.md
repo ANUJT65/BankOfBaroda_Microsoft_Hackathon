@@ -8,8 +8,9 @@
 (Do watch in 2X if you want, demo of the website is towards the end of the video, all the parameters are explained at the start of the video. We hope you like our project)
 IF YOU WANT TO SEE IMAGES  YOU COULD GO TO #IMPLEMENTATION FROM THE TABLE OF CONTENTS OR WATCH THE VIDEO
 
-
+[![Watch the demo video](https://img.youtube.com/vi/g_Ief5Fy4j8/hqdefault.jpg)](https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk)
 [![Watch the Finale demo video](https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk)
+
 
 ## PPT LINK WALTERWHITE PROTOTYPE: Top 100 out of 26k teams
 - https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view
