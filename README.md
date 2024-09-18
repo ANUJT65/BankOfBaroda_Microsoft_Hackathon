@@ -17,7 +17,7 @@ https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk
 - https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view
 - [Download the PPT Presentation](https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view)
 
-## WEBSITE LINK:[RECOMMENDED TO GO THROUGH FRONTEND]
+## WEBSITE LINK:[RECOMMENDED TO GO THROUGH FRONTEND, Cloud subscription ended please go through video for better visuals]
 - Frontend will be hosted on azure app services, temporarily hosted on vercel with all working models:
 - https://bob-hackathon-sigma.vercel.app/
 - Backend hosted on azure app services[FLASK]:
