@@ -24,7 +24,7 @@ https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk
 - https://bobcyberwardenfinal.azurewebsites.net
 
 
-## Title:  Walter White: Generative AI-Powered Centralized Dashboard for Enhanced Operations and Loan Approvals
+## Title:  Walter White: Generative AI-Powered Centralized Dashboard for Enhanced Customer Relationship Management and Banking Operations.
  **Team Cyber Wardens**  
 **College: Vishwakarma Institute of Technology**  
 **Team Members:**
