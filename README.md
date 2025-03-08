@@ -1,8 +1,14 @@
-# Bank Of Baroda Hackathon
+## Title:  Walter White: Generative AI-Powered Centralized Dashboard for Enhanced Customer Relationship Management and Banking Operations.
+ **Team Cyber Wardens**  
+**College: Vishwakarma Institute of Technology**  
+**Team Members:**
+- Chinmayee Prabhu
+- Pratham Gadkari
+- Suraj Chavan
+- Anuj Tadkase
+
 - **TRACK CHOSEN:**
   ![track](https://github.com/ANUJT65/bob_hackathon/assets/123918593/3d507f68-56ee-4f6b-a4e8-0eda52b922b7)
-
-
 
 ## DEMO VIDEO
 (Do watch in 2X if you want, demo of the website is towards the end of the video, all the parameters are explained at the start of the video. We hope you like our project)
@@ -24,14 +30,7 @@ https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk
 - https://bobcyberwardenfinal.azurewebsites.net
 
 
-## Title:  Walter White: Generative AI-Powered Centralized Dashboard for Enhanced Customer Relationship Management and Banking Operations.
- **Team Cyber Wardens**  
-**College: Vishwakarma Institute of Technology**  
-**Team Members:**
-- Chinmayee Prabhu
-- Pratham Gadkari
-- Suraj Chavan
-- Anuj Tadkase
+
 
 # Table of Contents
 
