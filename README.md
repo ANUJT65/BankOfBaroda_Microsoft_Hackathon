@@ -1,4 +1,4 @@
-
+## Note: Please click on implementation to check the ui of the project or do go through demo video
 # Table of Contents
 
 | Section                              |
@@ -213,7 +213,7 @@ The Walter White dashboard integrates various Azure services and machine learnin
 - **Data Chat Gen AI (Data Analytics):**
    Data analytics is facilitated through AI using langchain and pandas agents to provide insights and trends through a humanised chat bot method.
 
-#############
+
 ---
 ## IMPLEMENTATION
 ## PRESENT VERSION OF PROJECT
