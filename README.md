@@ -130,8 +130,6 @@ The Walter White dashboard integrates various Azure services and machine learnin
 
 ![copy_bob_digram-Page-1 drawio (1)](https://github.com/user-attachments/assets/a51d8c8a-ead5-4f91-86bf-b97a4ea76609)
 
-## FINAL ARCHITECTURE WITH INTEGRATION OF CRM
-![copy_bob_digram-Page-1 drawio (5)-Page-1 drawio (1)](https://github.com/user-attachments/assets/cfe33f2d-4529-43a0-9eff-23fa2c54c85f)
 
 
 ### 1. Data Input and Preprocessing
@@ -550,4 +548,10 @@ Older video
 
 
 https://www.youtube.com/watch?v=g_Ief5Fy4j8
+
+
+
+## FINAL ARCHITECTURE WITH INTEGRATION OF CRM
+![copy_bob_digram-Page-1 drawio (5)-Page-1 drawio (1)](https://github.com/user-attachments/assets/cfe33f2d-4529-43a0-9eff-23fa2c54c85f)
+
 
