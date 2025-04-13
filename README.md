@@ -1,4 +1,26 @@
+
+# Table of Contents
+
+| Section                              |
+|--------------------------------------|
+| [Bank Of Baroda Hackathon](#bank-of-baroda-hackathon)         |
+| [DEMO VIDEO](#demo-video)           |
+| [Problem Statement](#problem-statement)                       |
+| [Prerequisites for Understanding the Project](#prerequisites-for-understanding-the-project) |
+| [Methodology](#methodology)                                   |
+| [Detailed Workflow](#detailed-workflow)                       |
+| [Implementation Frontend Pics](#implementation )              |
+| [Tech Stack](#tech-stack)                                     |
+| [Security Considerations](#security-considerations)           |
+| [Key Differentiator](#key-differentiator)                     |
+| [User Experience](#user-experience)                           |
+| [Scalability](#scalability)                                   |
+| [Conclusion/Feedback](#closing-remarks)                       |
+
+
+
 ## Title:  Walter White: Generative AI-Powered Centralized Dashboard for Enhanced Customer Relationship Management and Banking Operations.
+
  **Team Cyber Wardens**  
 **College: Vishwakarma Institute of Technology**  
 **Team Members:**
@@ -7,14 +29,20 @@
 - Suraj Chavan
 - Anuj Tadkase
 
+
+
+
 - **TRACK CHOSEN:**
   ![track](https://github.com/ANUJT65/bob_hackathon/assets/123918593/3d507f68-56ee-4f6b-a4e8-0eda52b922b7)
+
+  
 
 ## DEMO VIDEO
 (Do watch in 2X if you want, demo of the website is towards the end of the video, all the parameters are explained at the start of the video. We hope you like our project)
 IF YOU WANT TO SEE IMAGES  YOU COULD GO TO #IMPLEMENTATION FROM THE TABLE OF CONTENTS OR WATCH THE VIDEO
 
 [![Watch the demo video](https://img.youtube.com/vi/g_Ief5Fy4j8/hqdefault.jpg)](https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk)
+
 ## link
 https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk
 
@@ -30,25 +58,6 @@ https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk
 - https://bobcyberwardenfinal.azurewebsites.net
 
 
-
-
-# Table of Contents
-
-| Section                              |
-|--------------------------------------|
-| [Bank Of Baroda Hackathon](#bank-of-baroda-hackathon)         |
-| [DEMO VIDEO](#demo-video)           |
-| [Problem Statement](#problem-statement)                       |
-| [Prerequisites for Understanding the Project](#prerequisites-for-understanding-the-project) |
-| [Methodology](#methodology)                                   |
-| [Detailed Workflow](#detailed-workflow)                       |
-| [Implementation Frontend Pics](#implementation )                             |
-| [Tech Stack](#tech-stack)                                     |
-| [Security Considerations](#security-considerations)           |
-| [Key Differentiator](#key-differentiator)                     |
-| [User Experience](#user-experience)                           |
-| [Scalability](#scalability)                                   |
-| [Conclusion/Feedback](#closing-remarks)                                     |
 
 
 ---
