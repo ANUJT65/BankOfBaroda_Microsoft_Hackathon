@@ -1,7 +1,7 @@
 ## Note: Please click on implementation to check the ui of the project or do go through demo video
-# Table of Contents
+# Table of Content
 
-| Section                              |
+| Sections                              |
 |--------------------------------------|
 | [Bank Of Baroda Hackathon](#bank-of-baroda-hackathon)         |
 | [DEMO VIDEO](#demo-video)           |
