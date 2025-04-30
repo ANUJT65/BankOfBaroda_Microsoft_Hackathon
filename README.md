@@ -47,9 +47,6 @@ IF YOU WANT TO SEE IMAGES  YOU COULD GO TO #IMPLEMENTATION FROM THE TABLE OF CON
 https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk
 
 
-## PPT LINK WALTERWHITE PROTOTYPE: Top 100 out of 26k teams
-- https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view
-- [Download the PPT Presentation](https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view)
 
 ## WEBSITE LINK:[RECOMMENDED TO GO THROUGH FRONTEND, Cloud subscription ended please go through video for better visuals]
 - Frontend will be hosted on azure app services, temporarily hosted on vercel with all working models:
@@ -507,7 +504,10 @@ To handle increased user and application volumes, our solution supports both hor
      - **Data Transformation:** Processes large volumes of data efficiently using data flows and mapping data flows.
    - **Implementation:**
      - Create pipelines to ingest data from various sources, transform it, and load it into databases.
-    
+# ppt
+- https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view
+- [Download the PPT Presentation](https://drive.google.com/file/d/1skhAlPQRNljNGoKiMWyiPTb3oBOoJa9W/view)
+
      
 
 ## Ease Of Deployment and maintainence
