@@ -31,7 +31,6 @@
 
 
 
-
 - **TRACK CHOSEN:**
   ![track](https://github.com/ANUJT65/bob_hackathon/assets/123918593/3d507f68-56ee-4f6b-a4e8-0eda52b922b7)
 
@@ -65,10 +64,10 @@ The banking industry faces significant challenges in operational efficiency, par
  The main goals of the Walter White dashboard are to:
  
 - **Streamline Loan Approvals:** Automate the loan approval process, reducing approval time from weeks to days(reducing the approval time for business loan approvals which take weeks, and also reducing the personal loan approvals which take upto some days).
-- **Retrieve and Analyze Customer Data:** Automatically fetch, store,  process and analyse customer data to support informed decision-making using **GEN AI and ML**.
-- **Perform Repetitive Calculations:** Automate financial calculations and metrics to reduce manual effort and minimize errors.
-- **Categorize and Respond to Emails:** Use AI to classify incoming emails and applications and generate appropriate responses, improving communication efficiency and customer connect.
-- **Streamline Input and Storage Process:** Simplify data submission for customers and ensure secure storage, leveraging OCR, form recognition, and cloud-based solutions. This reduces the burden on bankers for data handling and enhances operational efficiency also enhances customer engagement and convinience .
+- **Retrieve and Analyze Customer Data and Send Personalized Advertisements:** Automatically fetch, process and analyse customer data to send personalized advertisments, using **GEN AI and ML** to customers.
+- **Perform Repetitive Calculations:**  Automate financial calculations and metrics to reduce manual effort and minimize errors.
+- **Categorize and Respond to Emails:**  Use AI to classify incoming emails and applications and generate appropriate responses, improving communication efficiency and customer connect.
+- **Streamline Input and Storage Process:**  Simplify data submission for customers and ensure secure storage, leveraging OCR, form recognition, and cloud-based solutions. This reduces the burden on bankers for data handling and enhances operational efficiency also enhances customer engagement and convinience .
   
 ---
 ## Prerequisites for understanding the project
@@ -115,8 +114,7 @@ The Walter White dashboard integrates various Azure services and machine learnin
  3) Azure sql database is for storing structured information from documents and inputs.(We mostly keep these value seperate as we want to do different operations on them than blob storage ones)
 ### 
 - **Please be free to click  image (open in new tab) and follow the numbers given in diagram  and methodology simultaneously**
-- **Please be free to click  image (open in new tab) and follow the numbers given in diagram  and methodology simultaneously**
-- **Please be free to click  image (open in new tab) and follow the numbers given in diagram  and methodology simultaneously**
+
 ## USER FLOW:
 ![Final Userflow](https://github.com/user-attachments/assets/09a92b6e-8d77-47c7-b212-9c8fae013bcf)
 
