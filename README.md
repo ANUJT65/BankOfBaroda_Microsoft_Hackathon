@@ -260,44 +260,6 @@ The Walter White dashboard integrates various Azure services and machine learnin
 ![Wireframe - 9](https://github.com/ANUJT65/bob_hackathon/assets/123918593/38f0b253-e3a3-458e-b6fd-79aaf58aa874)
 
 
-## PREVIOUS VERSION OF FRONTEND below
-## Customer side:
-## Desc of below image:
-- As you can see in image, customers just have to attach their financial documents and azure ocr will do the work for them of filling the forms aswell as form recognition .
-- This really improves engagement of users and makes the financial process less stressful.
-
-![Wireframe - 6](https://github.com/ANUJT65/bob_hackathon/assets/123918593/c4381e5d-7989-43ea-83af-2659ec15d6cf)
-
-## Description of below image:
-- This is the centralized dashboard for the customer side where they can track their applications and whether they these applications approved or not.
--  Here you could see attachments necessary for businesses / customers which are all stored in bank database with automated calculations(specially balance sheets) 
-    ensuring that customers dont have to deal with these.
-![Wireframe - 5](https://github.com/ANUJT65/bob_hackathon/assets/123918593/e5dfce72-5e7a-4970-8332-23e37c652210)
-
-
-
-
-## Banker Side:
-## Description:
-- We can see how applications are categorised using ML model and  even a loan approval score is calculated so that they these applications can be approved or declined.
-- Even mails could be sent as shown below to customers through the dashboard itself to user on the basis of risk,
-  like much more interest rate for risky users or rejection mails etc
-  
-![Wireframe - 2](https://github.com/ANUJT65/bob_hackathon/assets/123918593/bd72c41d-ef22-4a80-a86a-936aee510497)
-
-## Description:
-- Here we could see categorization of incoming emails, which could be handled by respective departments and queries could be solved immediately boosting customer confidence.
-![Wireframe - 3](https://github.com/ANUJT65/bob_hackathon/assets/123918593/128c5c3c-966d-449d-859f-1ea5e7d6ba1b)
-
-#### Description:
-- This is one of our more innovative way of using generative ai where you could query the  database in natural language and get access to **read only** information
-- Here you could also do analytics of the attached document or retrieved documents using pandas agent and azure gen ai whose basic implementation is provided in 
-  this repo.
-![Wireframe - 4](https://github.com/ANUJT65/bob_hackathon/assets/123918593/df72e034-e677-4f6d-862c-0b1d517d690f)
-
-- 
-
-
 ---
 ## Tech Stack
 ![tech_stack_updated](https://github.com/ANUJT65/bob_hackathon/assets/123918593/f9725c06-b448-4397-8328-5a23219e7bf9)
@@ -372,10 +334,7 @@ Security is a critical component of the Walter White Dashboard. We are leveragin
 
 - **HTTPS**: All data exchanges between the client and server are encrypted using HTTPS to prevent eavesdropping and man-in-the-middle attacks.
 
-### 6) Auditing and Monitoring
 
-- **Audit Logs**: Implementing detailed audit logs to monitor access and changes to sensitive information. This helps in tracking and identifying any unauthorized access or modifications.
-- **Azure Security Center**: Using Azure Security Center to continuously monitor and improve the security posture of our resources.
 
 ### 7) Verification of Auditing Agencies
 
@@ -532,6 +491,44 @@ To handle increased user and application volumes, our solution supports both hor
 
 
 - For more detailed information on how we will  be integrating Azure Functions with Docker [Medium article](https://medium.com/@lucascuello/azure-functions-with-docker-82d3c4a2d831).
+
+
+## PREVIOUS VERSION OF FRONTEND below
+## Customer side:
+## Desc of below image:
+- As you can see in image, customers just have to attach their financial documents and azure ocr will do the work for them of filling the forms aswell as form recognition .
+- This really improves engagement of users and makes the financial process less stressful.
+
+![Wireframe - 6](https://github.com/ANUJT65/bob_hackathon/assets/123918593/c4381e5d-7989-43ea-83af-2659ec15d6cf)
+
+## Description of below image:
+- This is the centralized dashboard for the customer side where they can track their applications and whether they these applications approved or not.
+-  Here you could see attachments necessary for businesses / customers which are all stored in bank database with automated calculations(specially balance sheets) 
+    ensuring that customers dont have to deal with these.
+![Wireframe - 5](https://github.com/ANUJT65/bob_hackathon/assets/123918593/e5dfce72-5e7a-4970-8332-23e37c652210)
+
+
+
+
+## Banker Side:
+## Description:
+- We can see how applications are categorised using ML model and  even a loan approval score is calculated so that they these applications can be approved or declined.
+- Even mails could be sent as shown below to customers through the dashboard itself to user on the basis of risk,
+  like much more interest rate for risky users or rejection mails etc
+  
+![Wireframe - 2](https://github.com/ANUJT65/bob_hackathon/assets/123918593/bd72c41d-ef22-4a80-a86a-936aee510497)
+
+## Description:
+- Here we could see categorization of incoming emails, which could be handled by respective departments and queries could be solved immediately boosting customer confidence.
+![Wireframe - 3](https://github.com/ANUJT65/bob_hackathon/assets/123918593/128c5c3c-966d-449d-859f-1ea5e7d6ba1b)
+
+#### Description:
+- This is one of our more innovative way of using generative ai where you could query the  database in natural language and get access to **read only** information
+- Here you could also do analytics of the attached document or retrieved documents using pandas agent and azure gen ai whose basic implementation is provided in 
+  this repo.
+![Wireframe - 4](https://github.com/ANUJT65/bob_hackathon/assets/123918593/df72e034-e677-4f6d-862c-0b1d517d690f)
+
+- 
 
  ## Closing Remarks
 
