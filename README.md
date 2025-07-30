@@ -3,7 +3,7 @@
 
 | Sections                              |
 |--------------------------------------|
-| [Bank Of Baroda Hackathon](#bank-of-baroda-hackathon)         |
+| [Introduction](#introduction)         |
 | [DEMO VIDEO](#demo-video)           |
 | [Problem Statement](#problem-statement)                       |
 | [Prerequisites for Understanding the Project](#prerequisites-for-understanding-the-project) |
@@ -18,7 +18,7 @@
 | [Conclusion/Feedback](#closing-remarks)                       |
 
 
-
+## Introduction
 ## Title:  Walter White: Generative AI-Powered Centralized Dashboard for Enhanced Customer Relationship Management and Banking Operations.
 
  **Team Cyber Wardens**  
