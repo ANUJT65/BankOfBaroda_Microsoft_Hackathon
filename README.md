@@ -8,7 +8,7 @@
 | [Problem Statement](#problem-statement)                       |
 | [Prerequisites for Understanding the Project](#prerequisites-for-understanding-the-project) |
 | [Methodology](#methodology)                                   |
-| [Detailed Workflow](#detailed-workflow)                       |
+| [Architecture](#architecture)                       |
 | [Implementation Frontend Pics](#implementation )              |
 | [Tech Stack](#tech-stack)                                     |
 | [Security Considerations](#security-considerations)           |
@@ -103,7 +103,7 @@ The Walter White dashboard integrates various Azure services and machine learnin
 ![overview](https://github.com/ANUJT65/bob_hackathon/assets/123918593/555d1f70-9930-4821-a9f6-1ebe5da2b9e6)
 
 
-## Detailed Workflow
+## Architecture
 
 
 ## For removing any confusion before we start :
